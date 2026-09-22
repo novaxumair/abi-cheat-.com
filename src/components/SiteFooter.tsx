@@ -29,8 +29,8 @@ export function SiteFooter({ currentPath }: SiteFooterProps) {
   return (
     <footer className="page-x border-t border-z-soft/15 bg-z-band py-12 sm:py-14">
       <div className="mx-auto max-w-6xl">
-        <div className="flex flex-col gap-10 lg:flex-row lg:justify-between lg:gap-12">
-          <div className="max-w-sm shrink-0">
+        <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between lg:gap-12">
+          <div className="w-full max-w-sm shrink-0 lg:max-w-xs">
             <div className="flex items-center gap-2">
               <LogoMark className="text-z-soft" />
               <span className="font-semibold text-z-ink">{SITE_NAME}</span>
@@ -43,7 +43,7 @@ export function SiteFooter({ currentPath }: SiteFooterProps) {
 
           <nav
             aria-label="Footer"
-            className="grid flex-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10"
+            className="flex w-full min-w-0 flex-1 flex-col gap-8 sm:gap-10 lg:grid lg:grid-cols-3 lg:gap-10"
           >
             <div>
               <p className="text-xs font-semibold uppercase tracking-wider text-white/45">
@@ -119,7 +119,7 @@ export function SiteFooter({ currentPath }: SiteFooterProps) {
                   </li>
                 ))}
               </ul>
-              <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm text-white/55">
+              <ul className="mt-6 flex flex-col gap-2 text-sm text-white/55 sm:flex-row sm:flex-wrap sm:gap-x-5 sm:gap-y-2">
                 <li>
                   <a href="/privacy" className="hover:text-white">
                     Privacy
