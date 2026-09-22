@@ -18,7 +18,7 @@ export function HeroSearch({
   value,
   onChange,
   submitTo = 'forums',
-  placeholder = 'Search DayZ Cheats…',
+  placeholder = 'Search ABI cheat guides…',
   autoFocus = false,
   className = '',
 }: HeroSearchProps) {
@@ -42,12 +42,11 @@ export function HeroSearch({
     const term = q.trim().toLowerCase()
     if (!term) return []
     const cheatAliases = [
-      'dayz cheats',
-      'dayz cheat',
-      'dayz hacks',
-      'dayz hack',
-      'dayz standalone cheats',
-      'dayzhacks',
+      'arena breakout infinite cheats',
+      'abi cheats',
+      'arena breakout infinite esp',
+      'arena breakout infinite aimbot',
+      'abi cheat',
       'cheats',
     ]
     if (cheatAliases.some((a) => a.includes(term) || term.includes(a))) {

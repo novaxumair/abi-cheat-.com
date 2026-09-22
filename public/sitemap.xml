@@ -4,412 +4,430 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
-    <loc>https://dayzcheats.io/</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://abicheat.com/</loc>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abicheat.com/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abicheat.com/" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/home.jpg</image:loc>
-      <image:title>DayZ Cheats Open Graph</image:title>
-      <image:caption>Google and social preview image for dayzcheats.io homepage.</image:caption>
+      <image:loc>https://abicheat.com/og/home.jpg</image:loc>
+      <image:title>ABI Cheats Open Graph</image:title>
+      <image:caption>Google and social preview image for abicheat.com homepage.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-hero-full.webp</image:loc>
-      <image:title>DayZ Cheats Hero</image:title>
-      <image:caption>Buy DayZ cheats - DayZ Aimbot, ESP and radar hack hero artwork for PC.</image:caption>
+      <image:loc>https://abicheat.com/media/abi-hero-full.webp</image:loc>
+      <image:title>ABI Cheats Hero</image:title>
+      <image:caption>Buy ABI cheats - ABI Aimbot, ESP and radar hack hero artwork for PC.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-cover.webp</image:loc>
-      <image:title>DayZ Cheats Product Cover</image:title>
-      <image:caption>DayZ cheats product cover for checkout and social previews.</image:caption>
+      <image:loc>https://abicheat.com/media/abi-cover.webp</image:loc>
+      <image:title>ABI Cheats Product Cover</image:title>
+      <image:caption>ABI cheats product cover for checkout and social previews.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-video-thumb.jpg</image:loc>
-      <image:title>DayZ Cheats Preview Thumbnail</image:title>
-      <image:caption>Thumbnail for the DayZ Aimbot and ESP preview video.</image:caption>
+      <image:loc>https://abicheat.com/media/abi-video-thumb.jpg</image:loc>
+      <image:title>ABI Cheats Preview Thumbnail</image:title>
+      <image:caption>Thumbnail for the ABI Aimbot and ESP preview video.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/og/dayz-cheats.jpg</image:loc>
-      <image:title>DayZ Cheats Product Social Preview</image:title>
-      <image:caption>Default Open Graph image for dayzcheats.io product pages.</image:caption>
+      <image:loc>https://abicheat.com/og/abi-cheats.jpg</image:loc>
+      <image:title>ABI Cheats Product Social Preview</image:title>
+      <image:caption>Default Open Graph image for abicheat.com product pages.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/dayz-cheats</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://abicheat.com/abi-cheats</loc>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/dayz-cheats" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/dayz-cheats" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abicheat.com/abi-cheats" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abicheat.com/abi-cheats" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/dayz-cheats.jpg</image:loc>
-      <image:title>DayZ Cheats Open Graph</image:title>
-      <image:caption>Google and social preview for the DayZ cheats product page.</image:caption>
+      <image:loc>https://abicheat.com/og/abi-cheats.jpg</image:loc>
+      <image:title>ABI Cheats Open Graph</image:title>
+      <image:caption>Google and social preview for the ABI cheats product page.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-cover.webp</image:loc>
-      <image:title>DayZ Aimbot ESP Product Artwork</image:title>
+      <image:loc>https://abicheat.com/media/abi-cover.webp</image:loc>
+      <image:title>ABI Aimbot ESP Product Artwork</image:title>
       <image:caption>Product features, compatibility, status and price before checkout.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-hero-full.webp</image:loc>
-      <image:title>DayZ Cheats Product Hero</image:title>
-      <image:caption>Hero artwork for DayZ Aimbot, ESP and radar hack product details.</image:caption>
+      <image:loc>https://abicheat.com/media/abi-hero-full.webp</image:loc>
+      <image:title>Arena Breakout Infinite Cheats Product Hero</image:title>
+      <image:caption>Hero artwork for Arena Breakout Infinite Aimbot, ESP and radar hack product details.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-menu.gif</image:loc>
-      <image:title>DayZ Cheats Menu Preview</image:title>
-      <image:caption>Menu and Aimbot settings preview for DayZ cheats.</image:caption>
+      <image:loc>https://abicheat.com/media/abi-menu.webp</image:loc>
+      <image:title>Arena Breakout Infinite Cheats Menu Preview</image:title>
+      <image:caption>Menu and Aimbot settings preview for Arena Breakout Infinite cheats.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-esp-gameplay.gif</image:loc>
-      <image:title>DayZ ESP Gameplay</image:title>
-      <image:caption>Player ESP and wallhack preview for DayZ.</image:caption>
+      <image:loc>https://abicheat.com/media/abi-screenshot-5.webp</image:loc>
+      <image:title>Arena Breakout Infinite ESP Gameplay</image:title>
+      <image:caption>Player ESP and wallhack preview for Arena Breakout Infinite.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-video-thumb.jpg</image:loc>
-      <image:title>DayZ Cheats Preview Thumbnail</image:title>
-      <image:caption>Thumbnail for the DayZ cheats preview video.</image:caption>
+      <image:loc>https://abicheat.com/media/abi-video-thumb.jpg</image:loc>
+      <image:title>ABI Cheats Preview Thumbnail</image:title>
+      <image:caption>Thumbnail for the ABI cheats preview video.</image:caption>
     </image:image>
     <video:video>
-      <video:thumbnail_loc>https://dayzcheats.io/media/dayz-video-thumb.jpg</video:thumbnail_loc>
-      <video:title>DayZ Cheats Aimbot and ESP Preview</video:title>
-      <video:description>Self-hosted DayZ cheats preview showing Aimbot, ESP menu and survival gameplay visuals on PC.</video:description>
-      <video:content_loc>https://dayzcheats.io/videos/dayz-preview.mp4</video:content_loc>
+      <video:thumbnail_loc>https://abicheat.com/media/abi-video-thumb.jpg</video:thumbnail_loc>
+      <video:title>ABI Cheats Aimbot and ESP Preview</video:title>
+      <video:description>Self-hosted ABI cheats preview showing Aimbot, ESP menu and survival gameplay visuals on PC.</video:description>
+      <video:content_loc>https://abicheat.com/videos/hero.webm</video:content_loc>
       <video:family_friendly>yes</video:family_friendly>
       <video:live>no</video:live>
     </video:video>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://abicheat.com/forums</loc>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abicheat.com/forums" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abicheat.com/forums" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums.jpg</image:loc>
-      <image:title>DayZ Cheats Forums Open Graph</image:title>
-      <image:caption>Google preview image for the DayZ Cheats guides index.</image:caption>
+      <image:loc>https://abicheat.com/og/forums.jpg</image:loc>
+      <image:title>ABI Cheats Forums Open Graph</image:title>
+      <image:caption>Google preview image for the ABI Cheats guides index.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-menu.gif</image:loc>
-      <image:title>DayZ Cheats Forum Artwork</image:title>
-      <image:caption>Artwork reference for DayZ setup and feature guides.</image:caption>
+      <image:loc>https://abicheat.com/media/abi-menu.webp</image:loc>
+      <image:title>ABI Cheats Forum Artwork</image:title>
+      <image:caption>Artwork reference for ABI setup and feature guides.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/aimbot-settings</loc>
+    <loc>https://abicheat.com/forums/aimbot-settings</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/aimbot-settings" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/aimbot-settings" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abicheat.com/forums/aimbot-settings" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abicheat.com/forums/aimbot-settings" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-aimbot-settings.jpg</image:loc>
-      <image:title>DayZ Aimbot Settings for Silent Aim Open Graph</image:title>
-      <image:caption>DayZ Aimbot settings for PC: silent aim, FOV, smoothing and visible-check so your DayZ cheat looks legit on official and private servers. Start conservative, then save configs.</image:caption>
+      <image:loc>https://abicheat.com/og/forums-aimbot-settings.jpg</image:loc>
+      <image:title>Aimbot Settings: What Level &amp; Why Won&apos;t I Get Banned? Open Graph</image:title>
+      <image:caption>Arena Breakout Infinite aimbot settings for PC: FOV, smoothing, visible check, and speed tips. Legit-style ABI aimbot setup that lowers report risk in ranked raids.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-menu.gif</image:loc>
-      <image:title>DayZ Aimbot Settings for Silent Aim Artwork</image:title>
-      <image:caption>Tune DayZ Aimbot FOV, smoothing, hitbox and silent aim so survivor tracking stays effective without looking robotic to spectating admins.</image:caption>
+      <image:loc>https://abicheat.com/media/abi-menu.webp</image:loc>
+      <image:title>Aimbot Settings: What Level &amp; Why Won&apos;t I Get Banned? Artwork</image:title>
+      <image:caption>Tune Arena Breakout Infinite Aimbot FOV, smoothing, and visible checks so tracking helps in firefights without looking like rage clips in kill feeds.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/battleye-status</loc>
+    <loc>https://abicheat.com/forums/combat-assist-settings</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/battleye-status" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/battleye-status" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abicheat.com/forums/combat-assist-settings" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abicheat.com/forums/combat-assist-settings" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-battleye-status.jpg</image:loc>
-      <image:title>DayZ BattlEye Status: Clear to Load vs Updating Open Graph</image:title>
-      <image:caption>DayZ BattlEye status explained for DayZ cheats: clear-to-load vs Updating after patches, why you wait, and how admin bans differ from anti-cheat detections.</image:caption>
+      <image:loc>https://abicheat.com/og/forums-combat-assist-settings.jpg</image:loc>
+      <image:title>Combat Assist Settings: Ban Risk Explained Open Graph</image:title>
+      <image:caption>Combat assist settings for Arena Breakout Infinite cheats: combat mode, Aimbot speed, and ESP tips that reduce report risk in ABI ranked gameplay.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-cover.webp</image:loc>
-      <image:title>DayZ BattlEye Status: Clear to Load vs Updating Artwork</image:title>
-      <image:caption>What clear-to-load and Updating mean for DayZ cheats after BattlEye and game patches - and why admin bans are a separate risk.</image:caption>
+      <image:loc>https://abicheat.com/media/abi-screenshot-5.webp</image:loc>
+      <image:title>Combat Assist Settings: Ban Risk Explained Artwork</image:title>
+      <image:caption>Balance combat mode, Aimbot speed, and ESP noise for Arena Breakout Infinite ranked queues - report habits and kill cam reality.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/complete-setup</loc>
+    <loc>https://abicheat.com/forums/complete-setup</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/complete-setup" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/complete-setup" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abicheat.com/forums/complete-setup" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abicheat.com/forums/complete-setup" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-complete-setup.jpg</image:loc>
-      <image:title>Complete DayZ Cheats Setup Open Graph</image:title>
-      <image:caption>Complete DayZ cheats setup for Windows PC: buy when status is clear, antivirus exclusions, load order, first-run ESP and Aimbot config, then re-check BattlEye after every patch.</image:caption>
+      <image:loc>https://abicheat.com/og/forums-complete-setup.jpg</image:loc>
+      <image:title>Instructions to Use the Cheats Open Graph</image:title>
+      <image:caption>Instructions to use Arena Breakout Infinite cheats on Windows PC: buy when Active, exclusions, load order, enable ESP, optional Aimbot, save config, re-check after patches.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-hero-full.webp</image:loc>
-      <image:title>Complete DayZ Cheats Setup Artwork</image:title>
-      <image:caption>Step-by-step DayZ cheats setup: buy from $35, antivirus exclusions, load order, enable ESP and Aimbot, save configs, re-check BattlEye.</image:caption>
+      <image:loc>https://abicheat.com/media/abi-hero-full.webp</image:loc>
+      <image:title>Instructions to Use the Cheats Artwork</image:title>
+      <image:caption>Step-by-step Arena Breakout Infinite cheat setup: checkout, antivirus exclusions, load order, first ESP profile, and save config.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/disable-antivirus</loc>
+    <loc>https://abicheat.com/forums/disable-antivirus</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/disable-antivirus" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/disable-antivirus" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abicheat.com/forums/disable-antivirus" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abicheat.com/forums/disable-antivirus" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-disable-antivirus.jpg</image:loc>
-      <image:title>Antivirus Exclusions for DayZ Cheats Open Graph</image:title>
-      <image:caption>Allowlist DayZ cheats loaders in Windows Defender and third-party antivirus before you load. Restore quarantines, exclude the delivery folder, then continue setup when status is clear.</image:caption>
+      <image:loc>https://abicheat.com/og/forums-disable-antivirus.jpg</image:loc>
+      <image:title>Antivirus Exclusions for ABI Cheats Open Graph</image:title>
+      <image:caption>Allowlist Arena Breakout Infinite cheat loaders in Windows Defender before first run. Restore quarantines, exclude the delivery folder, then continue ABI setup.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-control-art.jpg</image:loc>
-      <image:title>Antivirus Exclusions for DayZ Cheats Artwork</image:title>
-      <image:caption>Allowlist DayZ cheats in Windows Defender and common antivirus so the loader is not quarantined before first run.</image:caption>
+      <image:loc>https://abicheat.com/media/abi-control-art.jpg</image:loc>
+      <image:title>Antivirus Exclusions for ABI Cheats Artwork</image:title>
+      <image:caption>Allowlist Arena Breakout Infinite cheat loaders in Defender and third-party AV so files are not quarantined mid-setup.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/esp-wallhack-guide</loc>
+    <loc>https://abicheat.com/forums/esp-wallhack-guide</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/esp-wallhack-guide" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/esp-wallhack-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abicheat.com/forums/esp-wallhack-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abicheat.com/forums/esp-wallhack-guide" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-esp-wallhack-guide.jpg</image:loc>
-      <image:title>DayZ ESP and Wallhack Setup Open Graph</image:title>
-      <image:caption>DayZ ESP and wallhack setup: survivor boxes, skeletons, distance, health, infected ESP and loot highlighting. Clean HUD defaults for DayZ cheats on PC.</image:caption>
+      <image:loc>https://abicheat.com/og/forums-esp-wallhack-guide.jpg</image:loc>
+      <image:title>Player ESP Settings: What to Enable First Open Graph</image:title>
+      <image:caption>Arena Breakout Infinite ESP setup: player wallhack boxes, skeleton, distance, health, and weapon ESP. Clean ABI wallhack defaults for PC raids.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-esp-gameplay.gif</image:loc>
-      <image:title>DayZ ESP and Wallhack Setup Artwork</image:title>
-      <image:caption>Configure DayZ ESP and wallhack for survivor boxes, infected tracking and loot highlighting without flooding your HUD.</image:caption>
+      <image:loc>https://abicheat.com/media/abi-screenshot-5.webp</image:loc>
+      <image:title>Player ESP Settings: What to Enable First Artwork</image:title>
+      <image:caption>Configure Arena Breakout Infinite player ESP and wallhack - boxes, distance, weapon type, and skeleton - without cluttering your HUD on Farm or TV Station.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/features-list</loc>
+    <loc>https://abicheat.com/forums/extraction-loot-guide</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/features-list" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/features-list" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abicheat.com/forums/extraction-loot-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abicheat.com/forums/extraction-loot-guide" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-features-list.jpg</image:loc>
-      <image:title>DayZ Cheat Features Checklist Open Graph</image:title>
-      <image:caption>DayZ cheat features checklist: silent aim Aimbot, player ESP, loot ESP, wallhack, radar hack and spoofer on dayzcheats.io from $35. Compare modules before you buy.</image:caption>
+      <image:loc>https://abicheat.com/og/forums-extraction-loot-guide.jpg</image:loc>
+      <image:title>Extraction &amp; Loot Routes with ESP Open Graph</image:title>
+      <image:caption>Arena Breakout Infinite loot routes and extraction gameplay with loot ESP and player wallhack - ABI farming guide for high value loot on PC.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-cover.webp</image:loc>
-      <image:title>DayZ Cheat Features Checklist Artwork</image:title>
-      <image:caption>Checklist of every DayZ cheat module on dayzcheats.io - silent aim, player ESP, loot ESP, wallhack, radar hack and spoofer - before you open checkout from $35.</image:caption>
+      <image:loc>https://abicheat.com/media/abi-screenshot-8.webp</image:loc>
+      <image:title>Extraction &amp; Loot Routes with ESP Artwork</image:title>
+      <image:caption>Use loot ESP and corpse tags to plan Arena Breakout Infinite routes - when to push, when to extract, and how to avoid third parties.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/hotkeys</loc>
+    <loc>https://abicheat.com/forums/features-list</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/hotkeys" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/hotkeys" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abicheat.com/forums/features-list" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abicheat.com/forums/features-list" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-hotkeys.jpg</image:loc>
-      <image:title>DayZ Cheats Hotkeys After Load Open Graph</image:title>
-      <image:caption>DayZ cheats hotkeys after checkout: open menu, Aimbot toggle, player ESP, loot ESP, radar hack and stream-proof binds. Keep panic keys minimal for field use.</image:caption>
+      <image:loc>https://abicheat.com/og/forums-features-list.jpg</image:loc>
+      <image:title>Arena Breakout Infinite Cheats Features Open Graph</image:title>
+      <image:caption>Full overview of Arena Breakout Infinite cheat modules on PC - aimbot, player ESP, loot overlays, and config tools before checkout.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-menu.gif</image:loc>
-      <image:title>DayZ Cheats Hotkeys After Load Artwork</image:title>
-      <image:caption>Menu and toggle hotkeys for DayZ cheats after a clean load - Aimbot, ESP, loot ESP, radar and panic binds.</image:caption>
+      <image:loc>https://abicheat.com/media/abi-cover.webp</image:loc>
+      <image:title>Arena Breakout Infinite Cheats Features Artwork</image:title>
+      <image:caption>Full checklist of ABI cheat modules - Aimbot options, player ESP, loot ESP, corpse overlays, and config tools - before you open checkout on abicheat.com.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/loader-errors</loc>
+    <loc>https://abicheat.com/forums/game-patch-status</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/loader-errors" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/loader-errors" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abicheat.com/forums/game-patch-status" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abicheat.com/forums/game-patch-status" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-loader-errors.jpg</image:loc>
-      <image:title>Fix DayZ Cheats Loader Errors Open Graph</image:title>
-      <image:caption>Fix DayZ cheats loader errors on Windows: antivirus quarantine, overlays, failed inject and menu not opening. Confirm BattlEye status is clear first, then escalate with your order ID.</image:caption>
+      <image:loc>https://abicheat.com/og/forums-game-patch-status.jpg</image:loc>
+      <image:title>ABI Cheats After a Game Patch - What to Do Open Graph</image:title>
+      <image:caption>Arena Breakout Infinite cheats after a game patch: wait for Active loader status, avoid outdated injects, and re-check abicheat.com before ranked raids.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-tactical-art.jpg</image:loc>
-      <image:title>Fix DayZ Cheats Loader Errors Artwork</image:title>
-      <image:caption>Troubleshoot DayZ cheats loader errors - menu not opening, instant close, antivirus quarantine and failed inject.</image:caption>
+      <image:loc>https://abicheat.com/media/abi-cover.webp</image:loc>
+      <image:title>ABI Cheats After a Game Patch - What to Do Artwork</image:title>
+      <image:caption>What Active vs Updating means after Arena Breakout Infinite patches - and why loading early wastes your raid night.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/radar-hack-guide</loc>
+    <loc>https://abicheat.com/forums/hotkeys</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/radar-hack-guide" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/radar-hack-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abicheat.com/forums/hotkeys" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abicheat.com/forums/hotkeys" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-radar-hack-guide.jpg</image:loc>
-      <image:title>DayZ Radar Hack Overlay Guide Open Graph</image:title>
-      <image:caption>DayZ radar hack guide for PC: 2D radar overlay, off-screen survivor tracking and safer military loot approaches. Pair with ESP for DayZ cheats that stay readable.</image:caption>
+      <image:loc>https://abicheat.com/og/forums-hotkeys.jpg</image:loc>
+      <image:title>ABI Cheat Hotkeys After Load Open Graph</image:title>
+      <image:caption>Arena Breakout Infinite cheat hotkeys: open menu, toggle player ESP, Aimbot, loot ESP, and combat mode. Minimal panic binds for ABI on PC.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-menu.gif</image:loc>
-      <image:title>DayZ Radar Hack Overlay Guide Artwork</image:title>
-      <image:caption>Use the DayZ radar hack 2D overlay to track off-screen survivors, avoid third parties and approach military loot safer.</image:caption>
+      <image:loc>https://abicheat.com/media/abi-menu.webp</image:loc>
+      <image:title>ABI Cheat Hotkeys After Load Artwork</image:title>
+      <image:caption>Menu and toggle hotkeys for Arena Breakout Infinite cheats - ESP, Aimbot, combat mode, and panic binds after a clean load.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/raid-play-guide</loc>
+    <loc>https://abicheat.com/forums/load-status-checklist</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/raid-play-guide" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/raid-play-guide" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abicheat.com/forums/load-status-checklist" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abicheat.com/forums/load-status-checklist" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-raid-play-guide.jpg</image:loc>
-      <image:title>Safer DayZ Cheat Settings for Loot Runs Open Graph</image:title>
-      <image:caption>Safer DayZ cheat settings for loot runs and survival: ESP-first play, mild silent aim, loot highlighting, radar hack and BattlEye habits that reduce report risk on private servers.</image:caption>
+      <image:loc>https://abicheat.com/og/forums-load-status-checklist.jpg</image:loc>
+      <image:title>Pre-Load Checklist Before You Buy or Queue Open Graph</image:title>
+      <image:caption>Pre-load checklist for Arena Breakout Infinite cheats: confirm Active status, patch notes, and loader version on abicheat.com before ABI ranked raids.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-box.jpg</image:loc>
-      <image:title>Safer DayZ Cheat Settings for Loot Runs Artwork</image:title>
-      <image:caption>Safer DayZ cheat defaults for survival and loot runs - ESP-first play, mild silent aim, radar awareness and report-conscious habits.</image:caption>
+      <image:loc>https://abicheat.com/media/abi-cover.webp</image:loc>
+      <image:title>Pre-Load Checklist Before You Buy or Queue Artwork</image:title>
+      <image:caption>Short checklist for Arena Breakout Infinite cheats - confirm Active status, game version, and config before you buy or queue ranked.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/stream-proof-setup</loc>
+    <loc>https://abicheat.com/forums/loader-errors</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/stream-proof-setup" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/stream-proof-setup" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abicheat.com/forums/loader-errors" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abicheat.com/forums/loader-errors" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-stream-proof-setup.jpg</image:loc>
-      <image:title>Stream-Proof DayZ Cheats for OBS Open Graph</image:title>
-      <image:caption>Stream-proof DayZ cheats for OBS and clips: keep ESP, wallhack and Aimbot overlays off recordings while you still see them locally. Test with a private capture first.</image:caption>
+      <image:loc>https://abicheat.com/og/forums-loader-errors.jpg</image:loc>
+      <image:title>Fix Arena Breakout Infinite Cheat Loader Errors Open Graph</image:title>
+      <image:caption>Fix Arena Breakout Infinite cheat loader errors on Windows: antivirus, overlays, failed inject, menu not opening. Confirm Active status first, then support.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-home-art.jpg</image:loc>
-      <image:title>Stream-Proof DayZ Cheats for OBS Artwork</image:title>
-      <image:caption>Hide DayZ ESP, loot highlighting and Aimbot overlays from OBS and capture tools with stream-proof mode.</image:caption>
+      <image:loc>https://abicheat.com/media/abi-tactical-art.jpg</image:loc>
+      <image:title>Fix Arena Breakout Infinite Cheat Loader Errors Artwork</image:title>
+      <image:caption>Troubleshoot ABI loader errors - menu not opening, instant close, antivirus quarantine, and failed inject.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/undetected-status</loc>
+    <loc>https://abicheat.com/forums/loot-container-esp</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/undetected-status" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/undetected-status" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abicheat.com/forums/loot-container-esp" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abicheat.com/forums/loot-container-esp" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-undetected-status.jpg</image:loc>
-      <image:title>BattlEye Status Checklist Before You Buy or Load Open Graph</image:title>
-      <image:caption>BattlEye status checklist for DayZ cheats: confirm clear-to-load before checkout and before every post-patch session. Wait when Updating; buy from $35 when status is live.</image:caption>
+      <image:loc>https://abicheat.com/og/forums-loot-container-esp.jpg</image:loc>
+      <image:title>Loot ESP &amp; Container ESP: Recommended Configurations Open Graph</image:title>
+      <image:caption>Arena Breakout infinite loot ESP and container wallhack: minimum price, max distance, and item ESP filters for ABI farming routes on PC.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-cover.webp</image:loc>
-      <image:title>BattlEye Status Checklist Before You Buy or Load Artwork</image:title>
-      <image:caption>Short BattlEye status checklist for DayZ cheats - confirm clear-to-load before checkout and before every post-patch session.</image:caption>
+      <image:loc>https://abicheat.com/media/abi-menu.webp</image:loc>
+      <image:title>Loot ESP &amp; Container ESP: Recommended Configurations Artwork</image:title>
+      <image:caption>Filter Arena Breakout Infinite loot ESP by price and distance so GPUs, docs, and high-tier keys pop without spamming grey loot labels.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/forums/windows-setup</loc>
+    <loc>https://abicheat.com/forums/stream-proof-setup</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/forums/windows-setup" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/forums/windows-setup" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abicheat.com/forums/stream-proof-setup" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abicheat.com/forums/stream-proof-setup" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/forums-windows-setup.jpg</image:loc>
-      <image:title>DayZ Cheats on Windows 10 and 11 Open Graph</image:title>
-      <image:caption>Windows 10 and 11 setup for DayZ cheats: close overlays, add Defender exclusions, launch with correct permissions and run a clean first load against BattlEye.</image:caption>
+      <image:loc>https://abicheat.com/og/forums-stream-proof-setup.jpg</image:loc>
+      <image:title>Stream-Proof ABI Overlays for OBS Open Graph</image:title>
+      <image:caption>Stream-proof Arena Breakout Infinite cheats for OBS: hide ESP and Aimbot overlays from recordings while playing locally on PC.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://dayzcheats.io/media/dayz-hero-full.webp</image:loc>
-      <image:title>DayZ Cheats on Windows 10 and 11 Artwork</image:title>
-      <image:caption>Windows 10/11 prep for DayZ cheats - overlays, Defender exclusions, admin rights and a clean first launch against BattlEye.</image:caption>
+      <image:loc>https://abicheat.com/media/abi-home-art.jpg</image:loc>
+      <image:title>Stream-Proof ABI Overlays for OBS Artwork</image:title>
+      <image:caption>Keep Arena Breakout Infinite ESP and Aimbot overlays off OBS and clips while you still see them locally.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/reviews</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://abicheat.com/forums/windows-setup</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://abicheat.com/forums/windows-setup" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abicheat.com/forums/windows-setup" />
+    <image:image>
+      <image:loc>https://abicheat.com/og/forums-windows-setup.jpg</image:loc>
+      <image:title>Arena Breakout Infinite Cheats on Windows 10 and 11 Open Graph</image:title>
+      <image:caption>Windows 10 and 11 setup for Arena Breakout Infinite cheats: close overlays, Defender exclusions, permissions, and first load on PC.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://abicheat.com/media/abi-hero-full.webp</image:loc>
+      <image:title>Arena Breakout Infinite Cheats on Windows 10 and 11 Artwork</image:title>
+      <image:caption>Windows prep for ABI cheats - overlays, Defender exclusions, TPM/HVCI notes, and a clean first launch.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://abicheat.com/reviews</loc>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/reviews" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/reviews" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abicheat.com/reviews" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abicheat.com/reviews" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/reviews.jpg</image:loc>
-      <image:title>DayZ Cheats Reviews Open Graph</image:title>
-      <image:caption>Google preview image for DayZ cheats reviews.</image:caption>
+      <image:loc>https://abicheat.com/og/reviews.jpg</image:loc>
+      <image:title>ABI Cheats Reviews Open Graph</image:title>
+      <image:caption>Google preview image for ABI cheats reviews.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/faq</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://abicheat.com/faq</loc>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/faq" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/faq" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abicheat.com/faq" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abicheat.com/faq" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/faq.jpg</image:loc>
-      <image:title>DayZ Cheats FAQ Open Graph</image:title>
-      <image:caption>Google preview image for the DayZ Cheats FAQ.</image:caption>
+      <image:loc>https://abicheat.com/og/faq.jpg</image:loc>
+      <image:title>ABI Cheats FAQ Open Graph</image:title>
+      <image:caption>Google preview image for the ABI Cheats FAQ.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/support</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://abicheat.com/support</loc>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/support" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/support" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abicheat.com/support" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abicheat.com/support" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/support.jpg</image:loc>
-      <image:title>DayZ Cheats Support Open Graph</image:title>
-      <image:caption>Google preview image for DayZ Cheats support.</image:caption>
+      <image:loc>https://abicheat.com/og/support.jpg</image:loc>
+      <image:title>ABI Cheats Support Open Graph</image:title>
+      <image:caption>Google preview image for ABI Cheats support.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/privacy</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://abicheat.com/privacy</loc>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/privacy" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abicheat.com/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abicheat.com/privacy" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/privacy.jpg</image:loc>
-      <image:title>DayZ Cheats Privacy Policy</image:title>
-      <image:caption>Privacy policy preview for dayzcheats.io orders and support.</image:caption>
+      <image:loc>https://abicheat.com/og/privacy.jpg</image:loc>
+      <image:title>ABI Cheats Privacy Policy</image:title>
+      <image:caption>Privacy policy preview for abicheat.com orders and support.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/refunds</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://abicheat.com/refunds</loc>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.45</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/refunds" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/refunds" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abicheat.com/refunds" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abicheat.com/refunds" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/refunds.jpg</image:loc>
-      <image:title>DayZ Cheats Refund Policy</image:title>
-      <image:caption>Refund rules preview for digital DayZ Cheats licenses.</image:caption>
+      <image:loc>https://abicheat.com/og/refunds.jpg</image:loc>
+      <image:title>ABI Cheats Refund Policy</image:title>
+      <image:caption>Refund rules preview for digital ABI Cheats licenses.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://dayzcheats.io/terms</loc>
-    <lastmod>2026-09-19</lastmod>
+    <loc>https://abicheat.com/terms</loc>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://dayzcheats.io/terms" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://dayzcheats.io/terms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abicheat.com/terms" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abicheat.com/terms" />
     <image:image>
-      <image:loc>https://dayzcheats.io/og/terms.jpg</image:loc>
-      <image:title>DayZ Cheats Terms of Use</image:title>
-      <image:caption>License terms preview for DayZ Cheats.</image:caption>
+      <image:loc>https://abicheat.com/og/terms.jpg</image:loc>
+      <image:title>ABI Cheats Terms of Use</image:title>
+      <image:caption>License terms preview for ABI Cheats.</image:caption>
     </image:image>
   </url>
 </urlset>

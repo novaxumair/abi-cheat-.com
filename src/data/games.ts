@@ -1,4 +1,4 @@
-export type GameStatus = 'Undetected' | 'Updating' | 'Use with caution'
+export type GameStatus = 'Active' | 'Updating' | 'Use with caution'
 
 export type Game = {
   slug: string
@@ -7,9 +7,9 @@ export type Game = {
   popular?: boolean
 }
 
-/** Site is DayZ cheats only — no other titles in the catalog. */
+/** Site is Arena Breakout Infinite cheats only — no other titles. */
 export const GAMES: Game[] = [
-  { slug: 'dayz', name: 'DayZ', status: 'Undetected', popular: true },
+  { slug: 'abi', name: 'Arena Breakout Infinite', status: 'Active', popular: true },
 ]
 
 export function getGame(slug: string) {
@@ -25,42 +25,101 @@ export function parseGuideSlug(param: string) {
   return lower.endsWith('-cheats') ? lower.slice(0, -7) : lower
 }
 
+export const PRODUCT_FEATURE_GROUPS = [
+  {
+    name: 'Aimbot options',
+    items: [
+      'Enable Akimbo',
+      'Visible Check',
+      'Ignore Knocked',
+      'Draw Target Line',
+      'Draw FOV',
+      'Max. Distance',
+      'Custom Keybind for Mouse',
+      'Aimbot Filter',
+      'Aimbot Smoothness',
+      'Aimbot Speed',
+      'Aimbot FOV',
+    ],
+  },
+  {
+    name: 'Visual options',
+    items: [
+      'Player ESP',
+      'AI ESP',
+      'Enable',
+      'Inventory List',
+      'Box',
+      'Distance',
+      'Name',
+      'Team Index',
+      'Weapon Type',
+      'View Direction',
+      'Health Bar',
+      'Head Circle',
+      'Snaplines',
+      'Skeleton',
+      'Inventory Price',
+      'Level',
+      'Side',
+    ],
+  },
+  {
+    name: 'World visual options',
+    items: [
+      'Enable Player Corpse ESP',
+      'Enable AI Corpse ESP',
+      'Price',
+      'Max Distance',
+      'Minimum Price',
+    ],
+  },
+  {
+    name: 'Misc options',
+    items: [
+      'Crosshair',
+      'Font Size',
+      'Combat Mode',
+      'Create config',
+      'Save config',
+      'Load Config',
+      'Delete Config',
+    ],
+  },
+] as const
+
 export const GUIDE_FEATURES = [
   {
-    name: 'DayZ Aimbot (silent aim)',
-    text: 'Silent-aim tracking with FOV, smoothing and bone selection — fire near a survivor and still land the hit, so it reads as legit even when an admin spectates.',
+    name: 'Aimbot & combat assist',
+    text: 'Configurable Aimbot with FOV, smoothing, speed, visible checks, and custom mouse binds — tuned for ABI firefights without locking through solid cover when checks are on.',
   },
   {
-    name: 'Player ESP / Wallhack',
-    text: 'See survivors through walls and treelines with distance, health and gear information when the build supports it — tell friendlies from hostiles instantly.',
+    name: 'Player & AI ESP',
+    text: 'Boxes, skeletons, names, weapon type, health bars, and team index for PMCs and scavs — see contacts through warehouses and stairwells before you commit.',
   },
   {
-    name: 'Infected ESP',
-    text: 'Track infected before they track you, so a loot run in Cherno or Elektro never turns into a zombie train at the worst moment.',
+    name: 'Loot & container wallhack',
+    text: 'Item ESP with price filters, minimum value thresholds, and container highlights so high-value pulls stand out on Farm, Valley, and Northridge runs.',
   },
   {
-    name: 'Loot & Item ESP',
-    text: 'Highlight guns, ammo, medical supplies and rare gear by category so you skip empty houses and gear up in minutes instead of hours.',
+    name: 'Corpse & extraction intel',
+    text: 'Player and AI corpse ESP with price tags — recover kits safely and spot leftover loot after firefights.',
   },
   {
-    name: 'Radar Hack',
-    text: '2D radar awareness for off-screen survivors across Chernarus and Livonia — spot the third party before it reaches your position.',
+    name: 'Combat mode & configs',
+    text: 'Save raid, PvP, and looting profiles — load configs per map or squad role without rebuilding the menu every session.',
   },
   {
-    name: 'Base & Stash Intel',
-    text: 'Spot player bases, tents and buried stashes on private servers so raids land on full storage instead of empty walls.',
+    name: 'Stream-friendly overlays',
+    text: 'Stream-proof mode keeps ESP and Aimbot overlays off common capture paths while you still see them locally.',
   },
   {
-    name: 'Official & modded server support',
-    text: 'Works on official DayZ servers and on private servers running most common mod setups.',
+    name: 'Windows PC support',
+    text: 'Built for Arena Breakout Infinite on Windows 10 and 11 via Steam, Epic, Microsoft Store, and the official launcher.',
   },
   {
-    name: 'Spoofer + Cleaner',
-    text: 'Protect hardware identifiers and refresh traces after bans or hardware swaps — included with the package.',
-  },
-  {
-    name: 'BattlEye status + support',
-    text: 'Live clear-to-load or Updating status is reviewed after BattlEye and DayZ patches before you load.',
+    name: 'Patch-synced loader',
+    text: 'We publish Active or Updating status after ABI patches so you load only when the current build matches the game client.',
   },
 ] as const
 

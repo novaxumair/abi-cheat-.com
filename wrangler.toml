@@ -1,20 +1,17 @@
-﻿# Cloudflare Workers + static assets — required so CI `npx wrangler deploy` succeeds.
-# (Dashboard is locked to that command; `wrangler pages deploy` is not used.)
-name = "dayzqrh"
+﻿# Cloudflare Workers + static assets
+name = "abicheat"
 main = "workers/site.js"
 compatibility_date = "2026-09-12"
 
-# Cloudflare CI invokes `npx wrangler deploy` directly. Build Astro first so
-# the static-assets directory exists before Wrangler validates it.
 [build]
 command = "npm run build"
 
 [[routes]]
-pattern = "dayzcheats.io"
+pattern = "abicheat.com"
 custom_domain = true
 
 [[routes]]
-pattern = "www.dayzcheats.io"
+pattern = "www.abicheat.com"
 custom_domain = true
 
 [assets]

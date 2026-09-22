@@ -7,6 +7,7 @@ import { CheckoutLink } from '../components/CheckoutLink'
 import { SeoMedia } from '../components/SeoMedia'
 import { SITE_HOST } from '../data/site'
 import { getForumMedia } from '../data/media'
+import { getForumReplies } from '../data/forum-replies'
 import { NotFoundPage } from './NotFoundPage'
 
 type BlogPostPageProps = {
@@ -27,6 +28,7 @@ export function BlogPostPage({ slug }: BlogPostPageProps) {
   if (!post) return <NotFoundPage />
 
   const related = BLOGS.filter((b) => b.slug !== post.slug).slice(0, 6)
+  const replies = getForumReplies(post.slug)
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-z-bg text-white">
@@ -53,7 +55,7 @@ export function BlogPostPage({ slug }: BlogPostPageProps) {
             </nav>
 
             <p className="mt-6 text-xs font-medium uppercase tracking-[0.2em] text-white/45">
-              {post.tag} · {post.readMinutes} min read · {post.date}
+              {post.tag} · {post.date}
             </p>
             <h1 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
               {post.title}
@@ -79,37 +81,55 @@ export function BlogPostPage({ slug }: BlogPostPageProps) {
               ))}
             </div>
 
+            {replies.length > 0 ? (
+              <section className="mt-12" aria-labelledby="forum-replies-heading">
+                <h2
+                  id="forum-replies-heading"
+                  className="text-lg font-semibold tracking-tight text-white sm:text-xl"
+                >
+                  Thread replies ({replies.length})
+                </h2>
+                <p className="mt-2 text-xs text-white/40">
+                  Sample replies for setup reference — not live user-generated posts.
+                </p>
+                <ul className="mt-5 space-y-4">
+                  {replies.map((reply) => (
+                    <li key={`${reply.author}-${reply.date}`} className="page-card rounded-2xl p-5">
+                      <div className="flex flex-wrap items-baseline justify-between gap-2">
+                        <p className="text-sm font-semibold text-white">{reply.author}</p>
+                        <time className="text-xs text-white/40" dateTime={reply.date}>
+                          {reply.date}
+                        </time>
+                      </div>
+                      <p className="mt-2 text-sm leading-relaxed text-white/60">{reply.body}</p>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            ) : null}
+
             <div className="page-card mt-12 rounded-2xl p-6 sm:p-8">
               <h2 className="text-lg font-semibold text-white">
-                Ready for DayZ Cheats?
+                Ready for Arena Breakout Infinite cheats?
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-white/55">
-                Check live BattlEye status, then buy ESP, wallhack, radar hack and silent aim for
-                DayZ on {SITE_HOST}. Need help? Read{' '}
+                Check Active loader status, then continue to ESP, wallhack, and optional Aimbot for
+                ABI on {SITE_HOST}. Need help? Read{' '}
                 <a href="/support" className="text-white/80 underline-offset-2 hover:underline">
-                  DayZ Cheats support
-                </a>
-                {' '}or{' '}
+                  support
+                </a>{' '}
+                or{' '}
                 <a href="/reviews" className="text-white/80 underline-offset-2 hover:underline">
                   player reviews
-                </a>
-                . Own the game via{' '}
-                <a
-                  href="https://dayz.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white/80 underline-offset-2 hover:underline"
-                >
-                  dayz.com
                 </a>
                 .
               </p>
               <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <a
-                  href={guidePath('dayz')}
+                  href={guidePath('abi')}
                   className="inline-flex items-center justify-center rounded-full border border-white/15 px-5 py-2.5 text-sm font-medium text-white hover:bg-white/5"
                 >
-                  Buy DayZ Cheats
+                  Product details
                 </a>
                 <a
                   href="/support"
@@ -118,7 +138,7 @@ export function BlogPostPage({ slug }: BlogPostPageProps) {
                   Support
                 </a>
                 <CheckoutLink className="cta-gradient inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-medium text-white">
-                  Buy DayZ Cheats
+                  Checkout
                 </CheckoutLink>
               </div>
             </div>

@@ -1,31 +1,29 @@
 import { blogPath } from './blog-paths'
 
-/** Official DayZ destinations for factual game context. */
-export const OFFICIAL_DAYZ_LINKS = [
+/** Official Arena Breakout destinations for factual game context. */
+export const OFFICIAL_GAME_LINKS = [
   {
-    label: 'DayZ',
-    href: 'https://dayz.com/',
-    description: 'Official DayZ game site',
+    label: 'Arena Breakout Infinite',
+    href: 'https://www.arenabreakout.com/',
+    description: 'Official game site and news',
   },
   {
-    label: 'DayZ on Steam',
-    href: 'https://store.steampowered.com/app/221100/DayZ/',
-    description: 'Official PC store page and client download',
-  },
-  {
-    label: 'Bohemia Interactive Support',
-    href: 'https://www.bohemia.net/',
-    description: 'Publisher support and account help',
+    label: 'Arena Breakout on Steam',
+    href: 'https://store.steampowered.com/app/2073620/Arena_Breakout_Infinite/',
+    description: 'Official PC store page',
   },
 ] as const
 
+/** @deprecated alias for footer migration */
+export const OFFICIAL_DAYZ_LINKS = OFFICIAL_GAME_LINKS
+
 /** Primary internal routes for crawl equity. */
 export const SITE_PAGE_LINKS = [
-  { label: 'Home', to: '/', description: 'Live status, price and checkout' },
+  { label: 'Home', to: '/', description: 'Overview, guides, and checkout' },
   {
     label: 'Product page',
-    to: '/dayz-cheats',
-    description: 'Aimbot, ESP, loot ESP, radar hack and compatibility details',
+    to: '/abi-cheats',
+    description: 'Aimbot, ESP, loot ESP, wallhack and compatibility details',
   },
   {
     label: 'Forums index',
@@ -67,22 +65,22 @@ export const SITE_PAGE_LINKS = [
 export const SITE_GUIDE_LINKS = [
   { label: 'Features checklist', to: blogPath('features-list') },
   { label: 'Aimbot settings', to: blogPath('aimbot-settings') },
-  { label: 'ESP & wallhack', to: blogPath('esp-wallhack-guide') },
-  { label: 'Radar hack', to: blogPath('radar-hack-guide') },
+  { label: 'Player ESP setup', to: blogPath('esp-wallhack-guide') },
+  { label: 'Loot & container ESP', to: blogPath('loot-container-esp') },
   { label: 'Hotkeys', to: blogPath('hotkeys') },
   { label: 'Complete setup', to: blogPath('complete-setup') },
   { label: 'Windows setup', to: blogPath('windows-setup') },
   { label: 'Antivirus exclusions', to: blogPath('disable-antivirus') },
   { label: 'Stream-proof setup', to: blogPath('stream-proof-setup') },
-  { label: 'BattlEye status', to: blogPath('battleye-status') },
-  { label: 'Survival & loot', to: blogPath('raid-play-guide') },
+  { label: 'After a game patch', to: blogPath('game-patch-status') },
+  { label: 'Extraction & loot routes', to: blogPath('extraction-loot-guide') },
   { label: 'Loader errors', to: blogPath('loader-errors') },
-  { label: 'Status checklist', to: blogPath('undetected-status') },
+  { label: 'Pre-load checklist', to: blogPath('load-status-checklist') },
 ] as const
 
 const CHECKOUT_HOST = ['za', 'deyo', '.com'].join('')
-const CHECKOUT_REF = ['Q', 'R', 'H'].join('')
-const CHECKOUT_PRODUCT = '/products/dayz-cheats'
+const CHECKOUT_REF = ['U', 'M', 'A', 'I', 'R'].join('')
+const CHECKOUT_PRODUCT = '/products/abi'
 
 export const CHECKOUT_URL = `https://${CHECKOUT_HOST}/go/${CHECKOUT_REF}?to=${encodeURIComponent(CHECKOUT_PRODUCT)}`
 

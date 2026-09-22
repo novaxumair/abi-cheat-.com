@@ -2,6 +2,7 @@
 import {
   OG_IMAGE,
   PRODUCT_PRICE_USD,
+  PRODUCT_SCHEMA_DESCRIPTION,
   SEO_REGIONS,
   SITE_ABOUT,
   SITE_NAME,
@@ -12,7 +13,7 @@ import {
 } from '../data/site'
 import { getReviewsAggregate, REVIEWS } from '../data/reviews'
 import type { GameStatus } from '../data/games'
-import { PAGE_MEDIA } from '../data/media'
+import { ABI_HOME_VIDEO, PAGE_MEDIA } from '../data/media'
 
 export const PRODUCT_ID = `${SITE_URL}/#product`
 
@@ -33,7 +34,6 @@ function baseOffer(url: string, availability: string) {
   }
 }
 
-/** Stable Organization + WebSite identity for every page. */
 export function siteIdentityGraph() {
   return [
     {
@@ -41,10 +41,10 @@ export function siteIdentityGraph() {
       '@id': `${SITE_URL}/#organization`,
       name: SITE_NAME,
       alternateName: [
-        'DayZ Hacks',
-        'DayZ Standalone Cheats',
-        'dayzcheats.io',
-        'DayZ Aimbot ESP',
+        'Arena Breakout Infinite Cheats',
+        'Arena Breakout Infinite cheats',
+        'abicheat',
+        'abicheat.com',
       ],
       url: SITE_URL,
       description: SITE_PURPOSE,
@@ -57,7 +57,6 @@ export function siteIdentityGraph() {
         height: 46,
       },
       image: absoluteAsset(OG_IMAGE),
-      areaServed: 'Worldwide',
     },
     {
       '@type': 'WebSite',
@@ -68,9 +67,8 @@ export function siteIdentityGraph() {
       inLanguage: 'en',
       about: {
         '@type': 'Thing',
-        name: 'DayZ cheats',
-        description:
-          'Commercial DayZ cheats for PC — silent aim Aimbot, player ESP, loot ESP, wallhack, radar hack and BattlEye status.',
+        name: 'Arena Breakout Infinite Cheats',
+        description: SITE_PURPOSE,
       },
       publisher: { '@id': `${SITE_URL}/#organization` },
     },
@@ -90,8 +88,7 @@ export function webPageNode(seo: PageSeo) {
     inLanguage: 'en',
   } as Record<string, unknown>
   const hasVisibleImage =
-    ['/', '/dayz-cheats', '/forums'].includes(seo.path) || seo.path.startsWith('/forums/')
-  // Text pages (faq/support/reviews) still expose OG as WebPage.image for social crawlers
+    ['/', '/abi-cheats', '/forums'].includes(seo.path) || seo.path.startsWith('/forums/')
   const hasOgImage = Boolean(seo.image)
   if (hasVisibleImage || hasOgImage) {
     page.primaryImageOfPage = {
@@ -110,19 +107,12 @@ export function productCoreJsonLd() {
   return {
     '@type': 'Product',
     '@id': PRODUCT_ID,
-    name: 'DayZ Cheats',
-    alternateName: [
-      'DayZ Hacks',
-      'DayZ Standalone Cheats',
-      'DayZ Aimbot',
-      'DayZ ESP',
-      'DayZ Wallhack',
-      'DayZ Radar Hack',
-    ],
-    description: SITE_PURPOSE,
-    url: `${SITE_URL}/dayz-cheats`,
+    name: 'Arena Breakout Infinite Cheats',
+    alternateName: ['Arena Breakout Infinite Cheats', 'ABI Cheats'],
+    description: PRODUCT_SCHEMA_DESCRIPTION,
+    url: `${SITE_URL}/abi-cheats`,
     image: [
-      absoluteAsset('/og/dayz-cheats.jpg'),
+      absoluteAsset('/og/abi-cheats.jpg'),
       absoluteAsset('/og/home.jpg'),
       absoluteAsset(PAGE_MEDIA.product.image),
       absoluteAsset(PAGE_MEDIA.home.image),
@@ -130,14 +120,13 @@ export function productCoreJsonLd() {
     brand: { '@type': 'Brand', name: SITE_NAME },
     manufacturer: { '@id': `${SITE_URL}/#organization` },
     category: 'PC game software',
-    offers: baseOffer(`${SITE_URL}/dayz-cheats`, 'https://schema.org/InStock'),
+    offers: baseOffer(`${SITE_URL}/abi-cheats`, 'https://schema.org/InStock'),
     subjectOf: {
       '@type': 'VideoObject',
-      name: 'DayZ Cheats Aimbot and ESP preview',
-      description:
-        'Preview of DayZ Aimbot, ESP menu, loot highlighting and radar hack features on PC.',
-      thumbnailUrl: absoluteAsset('/media/dayz-video-thumb.jpg'),
-      contentUrl: absoluteAsset('/videos/dayz-preview.mp4'),
+      name: ABI_HOME_VIDEO.title,
+      description: ABI_HOME_VIDEO.caption,
+      thumbnailUrl: absoluteAsset(ABI_HOME_VIDEO.poster),
+      contentUrl: absoluteAsset(ABI_HOME_VIDEO.src),
       uploadDate: '2026-09-16',
       inLanguage: 'en',
     },
@@ -146,16 +135,15 @@ export function productCoreJsonLd() {
 
 export function productDetailJsonLd(status: GameStatus) {
   const availability =
-    status === 'Undetected' ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock'
+    status === 'Active' ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock'
   return {
     ...productCoreJsonLd(),
-    url: `${SITE_URL}/dayz-cheats`,
+    url: `${SITE_URL}/abi-cheats`,
     image: absoluteAsset(PAGE_MEDIA.product.image),
     about: {
       '@type': 'VideoGame',
-      name: 'DayZ',
-      alternateName: ['DayZ Standalone', 'DayZ SA'],
-      publisher: { '@type': 'Organization', name: 'Bohemia Interactive' },
+      name: 'Arena Breakout Infinite',
+      alternateName: ['ABI', 'Arena Breakout'],
       gamePlatform: 'PC',
     },
     additionalProperty: [
@@ -163,17 +151,16 @@ export function productDetailJsonLd(status: GameStatus) {
       {
         '@type': 'PropertyValue',
         name: 'Features',
-        value: 'Silent aim Aimbot, player ESP, infected ESP, loot ESP, wallhack, radar hack, spoofer',
+        value: 'Aimbot, player ESP, AI ESP, loot ESP, container wallhack, corpse ESP, configs',
       },
-      { '@type': 'PropertyValue', name: 'Anti-cheat', value: 'BattlEye' },
       {
         '@type': 'PropertyValue',
-        name: 'Servers',
-        value: 'Official DayZ servers and private servers with common mods',
+        name: 'Clients',
+        value: 'Steam, Epic Games, Microsoft Store, official launcher',
       },
       { '@type': 'PropertyValue', name: 'Status', value: status },
     ],
-    offers: baseOffer(`${SITE_URL}/dayz-cheats`, availability),
+    offers: baseOffer(`${SITE_URL}/abi-cheats`, availability),
   }
 }
 
@@ -181,7 +168,7 @@ export function productReviewsJsonLd() {
   const aggregate = getReviewsAggregate()
   return {
     ...productCoreJsonLd(),
-    url: `${SITE_URL}/dayz-cheats`,
+    url: `${SITE_URL}/abi-cheats`,
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: aggregate.ratingValue,
@@ -194,7 +181,7 @@ export function productReviewsJsonLd() {
       author: { '@type': 'Person', name: review.author },
       datePublished: review.datePublished,
       reviewBody: review.body,
-      name: `${review.author} DayZ Cheats review`,
+      name: `${review.author} ABI cheats review`,
       reviewRating: {
         '@type': 'Rating',
         ratingValue: String(review.rating),
@@ -206,7 +193,6 @@ export function productReviewsJsonLd() {
   }
 }
 
-/** Merge site identity + WebPage + optional extra nodes into FAQ/Product graph. */
 export function buildPageJsonLd(seo: PageSeo, extra: unknown[] = []) {
   const cleaned = extra.filter((node) => {
     if (!node || typeof node !== 'object') return true
@@ -219,7 +205,6 @@ export function buildPageJsonLd(seo: PageSeo, extra: unknown[] = []) {
   }
 }
 
-/** Build FAQPage JSON-LD graph node from the same items shown in FaqSection. */
 export function faqPageJsonLd(items: FaqItem[], pageUrl?: string) {
   return {
     '@type': 'FAQPage',

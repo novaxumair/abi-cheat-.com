@@ -28,8 +28,8 @@ const imageType = isOgJpeg
     : image.endsWith('.gif')
       ? 'image/gif'
       : 'image/jpeg'
-const imageWidth = isOgJpeg ? 1200 : image.includes('/media/dayz-') ? 800 : 1200
-const imageHeight = isOgJpeg ? 630 : image.includes('/media/dayz-') ? 450 : 630
+const imageWidth = isOgJpeg ? 1200 : image.includes('/media/abi-') ? 800 : 1200
+const imageHeight = isOgJpeg ? 630 : image.includes('/media/abi-') ? 450 : 630
 const robots =
   seo.robots ||
   'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
@@ -38,7 +38,7 @@ const isHome = seo.path === '/' || seo.path === ''
 /** Preload OG only when it supports LCP (hero/product/forums) — not text pages */
 const preloadOg =
   isHome ||
-  seo.path === '/dayz-cheats' ||
+  seo.path === '/abi-cheats' ||
   seo.path === '/forums' ||
   seo.path.startsWith('/forums/')
 ---
@@ -61,7 +61,7 @@ const preloadOg =
       <link
         rel="preload"
         as="image"
-        href="/media/dayz-hero-full.webp"
+        href="/media/abi-hero-full.webp"
         type="image/webp"
         fetchpriority="high"
       />
@@ -83,7 +83,7 @@ const preloadOg =
 
     <meta property="og:type" content={seo.ogType || 'website'} />
     <meta property="og:site_name" content={SITE_NAME} />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content="en" />
     <meta property="og:url" content={url} />
     <meta property="og:title" content={seo.title} />
     <meta property="og:description" content={seo.description} />

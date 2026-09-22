@@ -31,10 +31,7 @@ export function ForumsPage({ initialQuery = '' }: ForumsPageProps) {
   return (
     <div className="min-h-screen overflow-x-hidden bg-z-bg text-white">
       <section className="relative flex min-h-[60vh] flex-col overflow-x-clip sm:min-h-[65vh]">
-        <VideoBg
-          image="/media/dayz-hero-full.webp"
-          imageAlt="DayZ cheats Aimbot and ESP product artwork"
-        />
+        <VideoBg />
         <div className="relative z-20 flex min-h-[60vh] flex-col sm:min-h-[65vh]">
           <Navbar onVideo />
           <div className="page-x mt-auto pb-10 sm:pb-14">
@@ -43,11 +40,11 @@ export function ForumsPage({ initialQuery = '' }: ForumsPageProps) {
                 Forums · Setup · {SITE_HOST}
               </p>
               <h1 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-                DayZ Cheats Guides
+                Arena Breakout Infinite Cheat Forums
               </h1>
               <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/70">
-                Setup threads for DayZ Cheats — features, hotkeys, complete setup,
-                disable antivirus, how to load, and live BattlEye status before you checkout.
+                Setup threads for ABI cheats — features, Aimbot tuning, player ESP, loot filters,
+                loader help, and patch status before you checkout.
               </p>
               <div className="relative z-50 mt-7">
                 <HeroSearch
@@ -70,17 +67,17 @@ export function ForumsPage({ initialQuery = '' }: ForumsPageProps) {
             <div className="page-card mb-10 flex flex-col gap-4 rounded-2xl p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
               <div>
                 <p className="text-xs uppercase tracking-wider text-white/45">Product</p>
-                <h2 className="mt-1 text-xl font-semibold text-white">DayZ Cheats</h2>
+                <h2 className="mt-1 text-xl font-semibold text-white">ABI Cheats</h2>
                 <p className="mt-2 max-w-xl text-sm text-white/55">
-                  Buy ESP, wallhack & silent aim Aimbot for DayZ Standalone — live BattlEye status
+                  Arena breakout infinite ESP, wallhack, and Aimbot — confirm Active loader status
                   before checkout.
                 </p>
               </div>
               <a
-                href={guidePath('dayz')}
+                href={guidePath('abi')}
                 className="cta-gradient inline-flex shrink-0 items-center justify-center rounded-full px-6 py-3 text-sm font-medium text-white"
               >
-                Buy DayZ Cheats
+                Product details
               </a>
             </div>
 
@@ -114,12 +111,9 @@ export function ForumsPage({ initialQuery = '' }: ForumsPageProps) {
                     href={blogPath(post.slug)}
                     className="page-card group flex h-full flex-col rounded-2xl p-5 sm:p-6"
                   >
-                    <div className="flex items-center justify-between gap-2">
-                      <span className="text-xs font-medium uppercase tracking-wider text-white/45">
-                        {post.tag}
-                      </span>
-                      <span className="text-xs text-white/35">{post.readMinutes} min</span>
-                    </div>
+                    <span className="text-xs font-medium uppercase tracking-wider text-white/45">
+                      {post.tag}
+                    </span>
                     <h3 className="mt-3 text-base font-semibold tracking-tight text-white sm:text-lg">
                       {post.title}
                     </h3>

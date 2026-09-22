@@ -14,75 +14,61 @@ export type BlogPost = {
   readMinutes: number
   tag: string
   sections: BlogSection[]
-  /** Emit HowTo JSON-LD when true (setup / how-to guides). */
   howTo?: boolean
 }
 
-/**
- * Commercial DayZ cheat guides — unique intents, keyword-targeted meta.
- * Primary SERP targets: dayz cheats, dayz cheat, dayz hacks, aimbot, esp, wallhack, radar.
- */
 export const BLOGS: BlogPost[] = [
   {
     slug: 'features-list',
-    title: 'DayZ Cheat Features Checklist',
+    title: 'Arena Breakout Infinite Cheats Features',
     excerpt:
-      'Checklist of every DayZ cheat module on dayzcheats.io — silent aim, player ESP, loot ESP, wallhack, radar hack and spoofer — before you open checkout from $35.',
-    metaTitle: 'DayZ Cheat Features Checklist | Aimbot ESP Radar',
+      'Full checklist of ABI cheat modules — Aimbot options, player ESP, loot ESP, corpse overlays, and config tools — before you open checkout on abicheat.com.',
+    metaTitle: 'Arena Breakout Infinite Cheats Features | Full Feature Overview',
     metaDescription:
-      'DayZ cheat features checklist: silent aim Aimbot, player ESP, loot ESP, wallhack, radar hack and spoofer on dayzcheats.io from $35. Compare modules before you buy.',
-    searchTerms: 'dayz cheat features checklist dayz cheats aimbot esp wallhack radar hack',
+      'Full overview of Arena Breakout Infinite cheat modules on PC — aimbot, player ESP, loot overlays, and config tools before checkout.',
+    searchTerms: 'arena breakout infinite cheat features tools modules',
     date: '2026-09-17',
     readMinutes: 8,
     tag: 'Features',
     sections: [
       {
-        heading: 'Use this checklist before checkout',
+        heading: 'Use this before you buy',
         body: [
-          'Searching “dayz cheats” or “dayz cheat” usually means one question: what is actually included? This guide is the module checklist — not the price page. Open Product details for live BattlEye status and checkout from $35.',
-          'DayZ Cheats on dayzcheats.io is a single DayZ Standalone product for Windows PC: one loader, one license, clear-to-load or Updating against BattlEye. Official and many modded private servers are supported when the build allows it.',
+          'Searching arena breakout infinite cheats usually means one question: what is actually in the menu? This thread is the module checklist — not the price page. Open product details for live loader status and plans from $35.',
+          'ABI Cheats on abicheat.com is a single Arena Breakout Infinite product for Windows PC: one loader, one license, Active or Updating labels after patches. Steam, Epic, Microsoft Store, and the official launcher are supported when the build allows it.',
         ],
       },
       {
-        heading: 'Aimbot and silent aim',
+        heading: 'Aimbot options',
         body: [
-          'DayZ Aimbot / silent aim — FOV, smoothing, hitbox and visible-check options so shots near a survivor still connect without a robotic snap that private-server admins notice on spectate.',
+          'Enable Akimbo, visible check, ignore knocked, draw target line, draw FOV, max distance, custom mouse keybind, filter, smoothness, speed, and FOV — tune combat assist for CQB dorms or long-range Valley fights.',
         ],
       },
       {
-        heading: 'ESP, wallhack and loot highlighting',
+        heading: 'Visual and world ESP',
         body: [
-          'Player ESP / wallhack — boxes, skeletons, distance and health through walls and treelines on Chernarus and Livonia.',
-          'Infected ESP — spot zombies before they aggro so a quiet loot run stays quiet.',
-          'Loot ESP — highlight guns, ammo, medical supplies and rare gear so empty houses stop wasting your time.',
+          'Player ESP and AI ESP with boxes, skeleton, snaplines, names, weapon type, health, inventory list, inventory price, level, team index, and view direction.',
+          'World visuals cover player and AI corpse ESP with price filters, max distance, and minimum price so high-value bodies stand out after firefights.',
         ],
       },
       {
-        heading: 'Radar, bases and extras',
+        heading: 'Misc and configs',
         body: [
-          'Radar hack — 2D radar for off-screen survivors and third parties around towns and military loot.',
-          'Base and stash intel — tents, barrels and buried stashes on private servers before you commit a raid.',
-          'Spoofer — hardware identifier protection when the current build includes it.',
-          'Stream-proof — keep supported overlays out of OBS and common capture tools.',
-        ],
-      },
-      {
-        heading: 'Next reads',
-        body: [
-          'Tune Aimbot in the Aimbot settings guide, dial ESP in the ESP & wallhack guide, then confirm live BattlEye status in the status guides before you buy DayZ cheats.',
+          'Crosshair, font size, combat mode, and create/save/load/delete config profiles for raid vs PvP nights.',
+          'Next reads: Aimbot settings thread, player ESP guide, loot ESP guide, then confirm loader status before every session.',
         ],
       },
     ],
   },
   {
     slug: 'aimbot-settings',
-    title: 'DayZ Aimbot Settings for Silent Aim',
+    title: 'Aimbot Settings: What Level & Why Won’t I Get Banned?',
     excerpt:
-      'Tune DayZ Aimbot FOV, smoothing, hitbox and silent aim so survivor tracking stays effective without looking robotic to spectating admins.',
-    metaTitle: 'DayZ Aimbot Settings | Silent Aim FOV & Smoothing',
+      'Tune Arena Breakout Infinite Aimbot FOV, smoothing, and visible checks so tracking helps in firefights without looking like rage clips in kill feeds.',
+    metaTitle: 'Arena Breakout Infinite Aimbot Settings | ABI Guide',
     metaDescription:
-      'DayZ Aimbot settings for PC: silent aim, FOV, smoothing and visible-check so your DayZ cheat looks legit on official and private servers. Start conservative, then save configs.',
-    searchTerms: 'dayz aimbot settings silent aim fov smoothing dayz cheat dayz cheats',
+      'Arena Breakout Infinite aimbot settings for PC: FOV, smoothing, visible check, and speed tips. Legit-style ABI aimbot setup that lowers report risk in ranked raids.',
+    searchTerms: 'arena breakout infinite aimbot settings abi aimbot smooth aim fov',
     date: '2026-09-17',
     readMinutes: 10,
     tag: 'Aimbot',
@@ -91,160 +77,137 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'Start conservative',
         body: [
-          'Blatant Aimbot is the fastest report on a DayZ server — private admins spectate more often than BattlEye alone catches. Start with a tight FOV, heavy smoothing and chest or nearest-bone targeting before head-only snap.',
-          'Confirm live BattlEye status first. Aimbot settings cannot save a detected build after a Bohemia or BattlEye update.',
+          'Wide FOV and max speed get reported fast in ABI — players review kill cams and share clips in community Discords. Start with a small FOV, higher smoothness, and body targeting before you touch head-only locks.',
+          'Confirm loader status is Active after any patch. Aimbot settings cannot fix an outdated build when the game client moved ahead.',
         ],
       },
       {
-        heading: 'Silent aim, FOV and distance',
+        heading: 'FOV, speed, and distance',
         body: [
-          'Silent aim is the DayZ cheat players search for: fire near a survivor and the round still lands while your crosshair never snaps.',
-          'FOV is the assist cone. Small FOV reads as tracking; huge FOV reads as a magnet in Elektro apartments.',
-          'Smoothing is stealth. Higher = slower human corrections. Lower = snappier and riskier.',
-          'Cap aim distance so airfield long shots do not look impossible.',
+          'Draw FOV helps you see the assist cone — keep it modest on stream even with stream-proof on.',
+          'Cap max distance so sniper shots across Valley do not look impossible on replay.',
+          'Ignore knocked stops finishing downed players on camera — fewer rage reports in solo queues.',
         ],
       },
       {
-        heading: 'Visible-check and hitbox',
+        heading: 'Visible check and filters',
         body: [
-          'Enable visibility checks so Aimbot does not lock through solid cover — easy for admins and squad mates to spot.',
-          'Chest or body hitboxes are safer than permanent head lock. Body shots are usually enough in DayZ.',
-        ],
-      },
-      {
-        heading: 'Save loot-run and PvP configs',
-        body: [
-          'For quiet gearing, keep Aimbot mild or off and lean on player ESP, loot ESP and radar. For contested military loot, add slight assist without snap behaviour.',
-          'Save a “loot run” and a “PvP” config. Licenses for DayZ cheats start from $35 on dayzcheats.io.',
+          'Visible check stops locks through solid cover — use it unless you accept higher report volume.',
+          'Aimbot filter and akimbo toggles are for specific loadouts; save a rifle profile and a SMG profile separately.',
         ],
       },
     ],
   },
   {
     slug: 'esp-wallhack-guide',
-    title: 'DayZ ESP and Wallhack Setup',
+    title: 'Player ESP Settings: What to Enable First',
     excerpt:
-      'Configure DayZ ESP and wallhack for survivor boxes, infected tracking and loot highlighting without flooding your HUD.',
-    metaTitle: 'DayZ ESP Wallhack Setup | Player Loot & Infected',
+      'Configure Arena Breakout Infinite player ESP and wallhack — boxes, distance, weapon type, and skeleton — without cluttering your HUD on Farm or TV Station.',
+    metaTitle: 'Arena Breakout Infinite ESP Setup | Player Wallhack',
     metaDescription:
-      'DayZ ESP and wallhack setup: survivor boxes, skeletons, distance, health, infected ESP and loot highlighting. Clean HUD defaults for DayZ cheats on PC.',
-    searchTerms: 'dayz esp wallhack dayz cheats loot esp player boxes infected dayz cheat',
+      'Arena Breakout Infinite ESP setup: player wallhack boxes, skeleton, distance, health, and weapon ESP. Clean ABI wallhack defaults for PC raids.',
+    searchTerms: 'arena breakout infinite esp abi esp player wallhack setup',
     date: '2026-09-17',
     readMinutes: 9,
     tag: 'ESP',
     howTo: true,
     sections: [
       {
-        heading: 'What DayZ ESP actually does',
+        heading: 'What ABI ESP does',
         body: [
-          'DayZ ESP draws survivors, infected and high-value loot through walls, fences and treelines before you expose yourself. It does not pull the trigger.',
-          'Most searches for “dayz wallhack” or “dayz esp” want this awareness layer — in a game where a kit takes hours to build, information beats loud Aimbot.',
+          'Arena Breakout Infinite ESP draws PMCs, scavs, and AI through walls and ceilings before you push a room. It does not pull the trigger — pairing with sound and peek discipline still matters.',
         ],
       },
       {
-        heading: 'Player and infected ESP',
+        heading: 'Recommended first toggles',
         body: [
-          'Enable boxes or skeletons, distance and health. Colour-code hostiles clearly and keep friendlies distinct.',
-          'Infected ESP is underrated — see the zombie behind the barn before it ruins a quiet house clear.',
-          'Limit max distance so the HUD is not flooded with 500m contacts you cannot fight yet.',
+          'Enable player ESP with box, distance, and name. Add weapon type when you run solo — knowing AK vs DMR at 40m changes peek timing.',
+          'Limit max distance to 150–200m so your screen is not a starfield of tags you cannot fight yet.',
+          'Skeleton and snaplines are powerful — use muted colors if teammates watch your screen.',
         ],
       },
       {
-        heading: 'Loot ESP filters',
+        heading: 'AI ESP and team index',
         body: [
-          'Filter by category: weapons, ammo, medical and rare gear. Showing every rag and can creates tunnel vision.',
-          'On private servers, pair loot ESP with base and stash markers so raids hit full storage.',
-        ],
-      },
-      {
-        heading: 'Stream and report risk',
-        body: [
-          'Use stream-proof if you clip or go live. Short ranges and clean colours look far less suspicious than neon skeletons across the whole map.',
+          'AI ESP separates scavs from players when colors are configured. Team index helps trios avoid shooting the same corner buddy.',
         ],
       },
     ],
   },
   {
-    slug: 'radar-hack-guide',
-    title: 'DayZ Radar Hack Overlay Guide',
+    slug: 'loot-container-esp',
+    title: 'Loot ESP & Container ESP: Recommended Configurations',
     excerpt:
-      'Use the DayZ radar hack 2D overlay to track off-screen survivors, avoid third parties and approach military loot safer.',
-    metaTitle: 'DayZ Radar Hack Guide | 2D Overlay for Survivors',
+      'Filter Arena Breakout Infinite loot ESP by price and distance so GPUs, docs, and high-tier keys pop without spamming grey loot labels.',
+    metaTitle: 'Arena Breakout Infinite Loot ESP | Container Wallhack',
     metaDescription:
-      'DayZ radar hack guide for PC: 2D radar overlay, off-screen survivor tracking and safer military loot approaches. Pair with ESP for DayZ cheats that stay readable.',
-    searchTerms: 'dayz radar hack dayz cheats 2d radar overlay off screen dayz cheat',
+      'Arena Breakout infinite loot ESP and container wallhack: minimum price, max distance, and item ESP filters for ABI farming routes on PC.',
+    searchTerms: 'arena breakout infinite loot esp container esp',
     date: '2026-09-17',
-    readMinutes: 8,
-    tag: 'Radar',
+    readMinutes: 9,
+    tag: 'Loot',
     howTo: true,
     sections: [
       {
-        heading: 'Why radar matters in DayZ',
+        heading: 'Price filters that work',
         body: [
-          'Most DayZ deaths are information gaps — the sniper above Elektro, the duo already in the airfield, the third party that heard your gunfight. A radar hack closes that gap without forcing Aimbot.',
-          'Buyers searching “dayz radar hack” want macro awareness for rotations between towns, military zones and base.',
+          'Set minimum price around 10–15k for general farming, higher for risky maps. Inventory price on players helps decide whether a fight is worth it.',
         ],
       },
       {
-        heading: 'Recommended radar setup',
+        heading: 'Distance and combat mode',
         body: [
-          'Keep radar small and readable so it does not cover your crosshair. Show hostile survivors clearly; dim infected if the overlay gets noisy.',
-          'Combine radar with ESP distance so you know whether a contact is a fight worth taking before you cross open ground.',
+          'Cap loot ESP distance inside buildings — 25–40m keeps focus on the room you are clearing.',
+          'Turn combat mode off during pure loot phases so overlays stay readable when three players are nearby.',
         ],
       },
       {
-        heading: 'Radar + ESP + loot ESP',
+        heading: 'Corpse ESP overlap',
         body: [
-          'Radar for macro movement, ESP for the building you are about to clear, loot ESP for whether the risk is worth it. That split is how DayZ cheats setups feel smart instead of chaotic.',
+          'Player corpse ESP with price tags pairs well with container ESP — loot the fight you won without guessing body locations.',
         ],
       },
     ],
   },
   {
     slug: 'hotkeys',
-    title: 'DayZ Cheats Hotkeys After Load',
+    title: 'ABI Cheat Hotkeys After Load',
     excerpt:
-      'Menu and toggle hotkeys for DayZ cheats after a clean load — Aimbot, ESP, loot ESP, radar and panic binds.',
-    metaTitle: 'DayZ Cheats Hotkeys | Menu ESP Aimbot Toggles',
+      'Menu and toggle hotkeys for Arena Breakout Infinite cheats — ESP, Aimbot, combat mode, and panic binds after a clean load.',
+    metaTitle: 'Arena Breakout Infinite Cheat Hotkeys | ABI Menu',
     metaDescription:
-      'DayZ cheats hotkeys after checkout: open menu, Aimbot toggle, player ESP, loot ESP, radar hack and stream-proof binds. Keep panic keys minimal for field use.',
-    searchTerms: 'dayz cheats hotkeys menu esp aimbot radar toggles dayz cheat',
+      'Arena Breakout Infinite cheat hotkeys: open menu, toggle player ESP, Aimbot, loot ESP, and combat mode. Minimal panic binds for ABI on PC.',
+    searchTerms: 'arena breakout infinite cheat hotkeys abi cheat menu keybinds',
     date: '2026-09-17',
-    readMinutes: 8,
+    readMinutes: 7,
     tag: 'Hotkeys',
     howTo: true,
     sections: [
       {
         heading: 'After a clean load',
         body: [
-          'Buy DayZ Cheats on dayzcheats.io (from $35), confirm live BattlEye status, launch DayZ, run the loader, then open the menu with the key in your delivery notes.',
-          'If the menu does not open, do not spam keys — contact support with your order ID.',
+          'Confirm Active status on abicheat.com, launch Arena Breakout Infinite, run the loader, then open the menu with the key from your delivery notes.',
+          'If the menu fails, do not spam keys — read loader errors or open support with your order ID.',
         ],
       },
       {
-        heading: 'Typical binds',
+        heading: 'Suggested binds',
         body: [
-          'Menu open/close, player ESP master toggle, Aimbot toggle, loot ESP toggle, radar toggle, stream-proof toggle.',
-          'Bind only what you use. Extra panic binds get pressed mid-fight and look obvious.',
-        ],
-      },
-      {
-        heading: 'Session habits',
-        body: [
-          'Keep a quick ESP-off bind for screenshots or squad clips. Re-check hotkeys after every build update on the product page.',
+          'Menu toggle, master ESP toggle, Aimbot toggle, loot ESP toggle, combat mode, stream-proof toggle.',
+          'Bind only what you use mid-raid — extra keys get hit accidentally during extracts.',
         ],
       },
     ],
   },
   {
     slug: 'complete-setup',
-    title: 'Complete DayZ Cheats Setup',
+    title: 'Instructions to Use the Cheats',
     excerpt:
-      'Step-by-step DayZ cheats setup: buy from $35, antivirus exclusions, load order, enable ESP and Aimbot, save configs, re-check BattlEye.',
-    metaTitle: 'DayZ Cheats Setup Guide | Complete Loader Steps',
+      'Step-by-step Arena Breakout Infinite cheat setup: checkout, antivirus exclusions, load order, first ESP profile, and save config.',
+    metaTitle: 'How to Use Arena Breakout Infinite Cheats | Setup',
     metaDescription:
-      'Complete DayZ cheats setup for Windows PC: buy when status is clear, antivirus exclusions, load order, first-run ESP and Aimbot config, then re-check BattlEye after every patch.',
-    searchTerms: 'dayz cheats setup load order windows complete guide dayz cheat',
+      'Instructions to use Arena Breakout Infinite cheats on Windows PC: buy when Active, exclusions, load order, enable ESP, optional Aimbot, save config, re-check after patches.',
+    searchTerms: 'arena breakout infinite cheat setup how to use abi cheats loader',
     date: '2026-09-17',
     readMinutes: 11,
     tag: 'Setup',
@@ -253,42 +216,40 @@ export const BLOGS: BlogPost[] = [
       {
         heading: '1) Buy and confirm status',
         body: [
-          'Open dayzcheats.io. If status is Updating after a BattlEye patch, wait. If status is clear, checkout from $35 and use only the official delivery link.',
+          'Open abicheat.com. If status shows Updating after an ABI patch, wait. When Active, continue to checkout from $35 and use only the official delivery link.',
         ],
       },
       {
         heading: '2) Prep Windows',
         body: [
-          'Close Discord overlay, GeForce overlay and RGB hooks that fight loaders.',
-          'Follow the antivirus exclusion guide for the delivery folder before first launch. Spoofer steps belong in delivery notes when the build includes them.',
+          'Close Discord overlay, GeForce overlay, and RGB hooks that fight loaders.',
+          'Follow the antivirus exclusion guide for the delivery folder before first launch.',
         ],
       },
       {
         heading: '3) Load order',
         body: [
-          'Start DayZ from Steam or the DayZ launcher and reach the server browser.',
-          'Run the DayZ Cheats loader as delivered.',
-          'Wait for a successful load, open the menu, enable player ESP, loot ESP and radar, then Aimbot only if you want it.',
+          'Start Arena Breakout Infinite from your store launcher and reach the main menu.',
+          'Run the loader as delivered, wait for success, open menu, enable player ESP and loot filters, then Aimbot only if you want combat assist.',
         ],
       },
       {
-        heading: '4) Save configs and re-check patches',
+        heading: '4) Save configs',
         body: [
-          'Save a loot-run config and a PvP config. After any DayZ or BattlEye update, check status again before you join a server.',
-          'On a modded private server, do one short test session before a long night.',
+          'Save a looting profile and a PvP profile. After any game patch, check Active status before you queue ranked.',
         ],
       },
     ],
   },
   {
     slug: 'windows-setup',
-    title: 'DayZ Cheats on Windows 10 and 11',
+    title: 'Arena Breakout Infinite Cheats on Windows 10 and 11',
     excerpt:
-      'Windows 10/11 prep for DayZ cheats — overlays, Defender exclusions, admin rights and a clean first launch against BattlEye.',
-    metaTitle: 'DayZ Cheats Windows 10/11 Setup | PC Guide',
+      'Windows prep for ABI cheats — overlays, Defender exclusions, TPM/HVCI notes, and a clean first launch.',
+    metaTitle: 'ABI Cheats Windows 11 Setup | PC Guide',
     metaDescription:
-      'Windows 10 and 11 setup for DayZ cheats: close overlays, add Defender exclusions, launch with correct permissions and run a clean first load against BattlEye.',
-    searchTerms: 'dayz cheats windows 11 setup defender overlay admin dayz cheat',
+      'Windows 10 and 11 setup for Arena Breakout Infinite cheats: close overlays, Defender exclusions, permissions, and first load on PC.',
+    searchTerms: 'arena breakout infinite cheats windows setup pc',
     date: '2026-09-17',
     readMinutes: 8,
     tag: 'Windows',
@@ -297,33 +258,26 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'Supported systems',
         body: [
-          'DayZ Cheats targets DayZ Standalone on Windows 10 and Windows 11 (Intel and AMD). Keep Windows stable enough that the DayZ launcher starts cleanly, then freeze major changes mid-session.',
+          'ABI Cheats targets Arena Breakout Infinite on Windows 10 and 11. Keep the game launcher updated before you inject.',
         ],
       },
       {
-        heading: 'Overlays and background apps',
+        heading: 'Overlays',
         body: [
-          'Disable Discord overlay, NVIDIA/AMD overlays and aggressive RGB suites before load. They commonly cause “loader opened but menu never appeared”.',
-        ],
-      },
-      {
-        heading: 'Permissions and launcher',
-        body: [
-          'Run the delivered loader with the permissions in your order email. Do not move files out of the excluded folder after setup.',
-          'Use the official Steam or DayZ launcher only — unofficial clients are unsupported.',
+          'Disable Discord and GPU overlays before load — common cause of menu not appearing.',
         ],
       },
     ],
   },
   {
     slug: 'disable-antivirus',
-    title: 'Antivirus Exclusions for DayZ Cheats',
+    title: 'Antivirus Exclusions for ABI Cheats',
     excerpt:
-      'Allowlist DayZ cheats in Windows Defender and common antivirus so the loader is not quarantined before first run.',
-    metaTitle: 'DayZ Cheats Antivirus Exclusions | Defender',
+      'Allowlist Arena Breakout Infinite cheat loaders in Defender and third-party AV so files are not quarantined mid-setup.',
+    metaTitle: 'ABI Cheats Antivirus Exclusions | Defender',
     metaDescription:
-      'Allowlist DayZ cheats loaders in Windows Defender and third-party antivirus before you load. Restore quarantines, exclude the delivery folder, then continue setup when status is clear.',
-    searchTerms: 'dayz cheats antivirus defender exclusion quarantine loader dayz cheat',
+      'Allowlist Arena Breakout Infinite cheat loaders in Windows Defender before first run. Restore quarantines, exclude the delivery folder, then continue ABI setup.',
+    searchTerms: 'arena breakout infinite cheat loader antivirus defender exclusion',
     date: '2026-09-17',
     readMinutes: 8,
     tag: 'Antivirus',
@@ -332,200 +286,172 @@ export const BLOGS: BlogPost[] = [
       {
         heading: 'Why loaders get flagged',
         body: [
-          'Cheat loaders often trip generic heuristics even from a legitimate dayzcheats.io purchase. Exclusion comes before you spam launch into DayZ.',
+          'Injection tools trigger generic heuristics. Exclusion comes before you retry launch ten times in a row.',
         ],
       },
       {
-        heading: 'Windows Defender steps',
+        heading: 'Defender steps',
         body: [
-          'Windows Security → Virus and threat protection → Manage settings → add an exclusion for the delivery folder.',
-          'Restore from Protection history if the file was quarantined, then exclude the folder permanently.',
-        ],
-      },
-      {
-        heading: 'Then continue setup',
-        body: [
-          'Return to Complete Setup for load order. Open support with your order ID if a clear-to-load DayZ build still fails after exclusion.',
+          'Windows Security → Virus and threat protection → Manage settings → add folder exclusion for the delivery path.',
+          'Restore quarantined files from Protection history, then exclude permanently.',
         ],
       },
     ],
   },
   {
     slug: 'stream-proof-setup',
-    title: 'Stream-Proof DayZ Cheats for OBS',
+    title: 'Stream-Proof ABI Overlays for OBS',
     excerpt:
-      'Hide DayZ ESP, loot highlighting and Aimbot overlays from OBS and capture tools with stream-proof mode.',
-    metaTitle: 'Stream-Proof DayZ Cheats | OBS Safe Overlay',
+      'Keep Arena Breakout Infinite ESP and Aimbot overlays off OBS and clips while you still see them locally.',
+    metaTitle: 'Stream-Proof Arena Breakout Infinite Cheats | OBS',
     metaDescription:
-      'Stream-proof DayZ cheats for OBS and clips: keep ESP, wallhack and Aimbot overlays off recordings while you still see them locally. Test with a private capture first.',
-    searchTerms: 'dayz stream proof cheats esp obs hide overlay clips dayz cheat',
+      'Stream-proof Arena Breakout Infinite cheats for OBS: hide ESP and Aimbot overlays from recordings while playing locally on PC.',
+    searchTerms: 'arena breakout infinite esp overlay stream proof abi cheat clips',
     date: '2026-09-17',
-    readMinutes: 8,
+    readMinutes: 7,
     tag: 'Stream',
     howTo: true,
     sections: [
       {
-        heading: 'Why stream-proof exists',
-        body: [
-          'ESP and loot overlays on stream are an instant report magnet. Private DayZ admins watch clips closely. Stream-proof keeps supported overlays out of common capture paths while you still see them locally.',
-        ],
-      },
-      {
         heading: 'OBS checklist',
         body: [
-          'Enable stream-proof in the DayZ Cheats menu before starting OBS.',
-          'Prefer game capture over display capture when possible, then verify with a private test recording before you go live.',
-        ],
-      },
-      {
-        heading: 'Clips and report risk',
-        body: [
-          'Stream-proof does not hide blatant Aimbot on a squad clip or admin spectator feed. Conservative silent aim still matters.',
-        ],
-      },
-    ],
-  },
-    {
-    slug: 'battleye-status',
-    title: 'DayZ BattlEye Status: Clear to Load vs Updating',
-    excerpt:
-      'What clear-to-load and Updating mean for DayZ cheats after BattlEye and game patches — and why admin bans are a separate risk.',
-    metaTitle: 'DayZ BattlEye Status | Clear to Load vs Updating',
-    metaDescription:
-      'DayZ BattlEye status explained for DayZ cheats: clear-to-load vs Updating after patches, why you wait, and how admin bans differ from anti-cheat detections.',
-    searchTerms: 'dayz battleye status clear to load updating dayz cheats explained',
-    date: '2026-09-17',
-    readMinutes: 8,
-    tag: 'Status',
-    sections: [
-      {
-        heading: 'Status is part of the product',
-        body: [
-          'BattlEye updates can invalidate a build overnight. dayzcheats.io shows clear-to-load or Updating so you are not buying a dead loader from a Discord screenshot.',
-          'Licenses start from $35 — honest status beats fake always-safe marketing against BattlEye.',
-        ],
-      },
-      {
-        heading: 'Clear to load vs Updating',
-        body: [
-          'Clear to load (product label: Undetected) — ready for the current DayZ build.',
-          'Updating — wait. Do not force yesterday’s loader into today’s BattlEye.',
-        ],
-      },
-      {
-        heading: 'Admin bans are separate',
-        body: [
-          'On private DayZ servers most bans come from admins reviewing reports, not from BattlEye alone. Play conservatively even while status is green.',
-        ],
-      },
-      {
-        heading: 'After every patch',
-        body: [
-          'Re-read status after every DayZ or BattlEye patch before you join a server. Use the status checklist guide for the pre-buy / pre-load habit.',
+          'Enable stream-proof in menu before OBS starts. Prefer game capture and verify with a private test recording.',
         ],
       },
     ],
   },
   {
-    slug: 'undetected-status',
-    title: 'BattlEye Status Checklist Before You Buy or Load',
+    slug: 'game-patch-status',
+    title: 'ABI Cheats After a Game Patch — What to Do',
     excerpt:
-      'Short BattlEye status checklist for DayZ cheats — confirm clear-to-load before checkout and before every post-patch session.',
-    metaTitle: 'BattlEye Status Checklist | Before You Buy DayZ Cheats',
+      'What Active vs Updating means after Arena Breakout Infinite patches — and why loading early wastes your raid night.',
+    metaTitle: 'Arena Breakout Infinite Cheats After Patch | ABI Status',
     metaDescription:
-      'BattlEye status checklist for DayZ cheats: confirm clear-to-load before checkout and before every post-patch session. Wait when Updating; buy from $35 when status is live.',
-    searchTerms: 'dayz cheats status checklist before buy load battleye undetected dayz cheats',
+      'Arena Breakout Infinite cheats after a game patch: wait for Active loader status, avoid outdated injects, and re-check abicheat.com before ranked raids.',
+    searchTerms: 'arena breakout infinite cheats 2026 patch update abi loader status',
     date: '2026-09-17',
     readMinutes: 8,
     tag: 'Status',
     sections: [
       {
+        heading: 'Status labels',
+        body: [
+          'Active means the current build matches the live ABI client. Updating means wait — forcing an old loader after a patch often means instant kick or broken ESP.',
+        ],
+      },
+      {
+        heading: 'After every patch',
+        body: [
+          'Re-read status before checkout and before every session. Use the pre-load checklist thread as a habit.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'load-status-checklist',
+    title: 'Pre-Load Checklist Before You Buy or Queue',
+    excerpt:
+      'Short checklist for Arena Breakout Infinite cheats — confirm Active status, game version, and config before you buy or queue ranked.',
+    metaTitle: 'ABI Cheats Pre-Load Checklist | Before You Buy',
+    metaDescription:
+      'Pre-load checklist for Arena Breakout Infinite cheats: confirm Active status, patch notes, and loader version on abicheat.com before ABI ranked raids.',
+    searchTerms: 'arena breakout infinite loader checklist active status',
+    date: '2026-09-17',
+    readMinutes: 6,
+    tag: 'Status',
+    sections: [
+      {
         heading: 'Before checkout',
         body: [
-          'Confirm clear-to-load status on the homepage or product page. If Updating, wait or read Refunds for extended downtime. Prices start from $35 when status is live.',
+          'Confirm Active on homepage or product page. If Updating, wait or read refunds for extended downtime.',
         ],
       },
       {
         heading: 'Before every session',
         body: [
-          'Re-check BattlEye status after DayZ patches. Load once cleanly — do not spam inject into a failed state before you join a server.',
-        ],
-      },
-      {
-        heading: 'Spoofer note',
-        body: [
-          'If delivery includes a spoofer, follow those steps only when status is clear to load. Spoofing does not replace waiting out an Updating window.',
+          'Re-check status after ABI patches. One clean inject — do not spam load if the first attempt fails.',
         ],
       },
     ],
   },
-{
-    slug: 'raid-play-guide',
-    title: 'Safer DayZ Cheat Settings for Loot Runs',
+  {
+    slug: 'combat-assist-settings',
+    title: 'Combat Assist Settings: Ban Risk Explained',
     excerpt:
-      'Safer DayZ cheat defaults for survival and loot runs — ESP-first play, mild silent aim, radar awareness and report-conscious habits.',
-    metaTitle: 'Safer DayZ Cheat Settings | Loot Run Defaults',
+      'Balance combat mode, Aimbot speed, and ESP noise for Arena Breakout Infinite ranked queues — report habits and kill cam reality.',
+    metaTitle: 'Arena Breakout Infinite Combat Assist | Ban Risk',
     metaDescription:
-      'Safer DayZ cheat settings for loot runs and survival: ESP-first play, mild silent aim, loot highlighting, radar hack and BattlEye habits that reduce report risk on private servers.',
-    searchTerms: 'dayz cheat settings loot run survival safer defaults esp aimbot dayz cheats',
+      'Combat assist settings for Arena Breakout Infinite cheats: combat mode, Aimbot speed, and ESP tips that reduce report risk in ABI ranked gameplay.',
+    searchTerms: 'arena breakout infinite combat assist aimbot settings',
     date: '2026-09-17',
     readMinutes: 9,
-    tag: 'Survival',
+    tag: 'Combat',
     sections: [
       {
-        heading: 'DayZ is a report environment',
+        heading: 'Reports are the real filter',
         body: [
-          'BattlEye is not the only risk. Private admins spectate reports, and a survivor who lost a two-week kit will write that report. Conservative visuals beat loud Aimbot.',
+          'ABI players report suspicious kill cams and loot luck. Conservative assist plus smart extract timing beats max settings in the first week.',
         ],
       },
       {
-        heading: 'Recommended survival stack',
+        heading: 'Suggested stack',
         body: [
-          'Player ESP, infected ESP, loot ESP and radar on; Aimbot off or heavily smoothed; short ESP range; stream-proof on if you clip.',
-          'Save this as a loot-run config. A geared PvP config can be slightly more aggressive, but silent aim should still look natural.',
+          'Player ESP + loot filters on; combat mode off unless pushing a fight; Aimbot smooth and slow if enabled at all.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'extraction-loot-guide',
+    title: 'Extraction & Loot Routes with ESP',
+    excerpt:
+      'Use loot ESP and corpse tags to plan Arena Breakout Infinite routes — when to push, when to extract, and how to avoid third parties.',
+    metaTitle: 'Arena Breakout Infinite Loot Routes | Extraction ESP',
+    metaDescription:
+      'Arena Breakout Infinite loot routes and extraction gameplay with loot ESP and player wallhack — ABI farming guide for high value loot on PC.',
+    searchTerms: 'arena breakout infinite loot routes extraction guide loot gameplay abi',
+    date: '2026-09-17',
+    readMinutes: 9,
+    tag: 'Routes',
+    sections: [
+      {
+        heading: 'ESP-first farming',
+        body: [
+          'Run quiet loot ESP routes before you enable combat mode. Third parties sound close — player ESP tells you if extract is safe.',
         ],
       },
       {
-        heading: 'Map habits that pay',
+        heading: 'Extract timing',
         body: [
-          'Coast towns (Elektro, Cherno): short-range ESP and infected tracking while you gear. Military zones and NW airfield: radar first, loot ESP second, mild silent aim only if you must fight.',
-          'Base raids on private servers: confirm stash and tent markers before you open a wall.',
-          'If BattlEye flips to Updating mid-session, stop. Waiting is cheaper than forcing a rebuild window.',
+          'Leave when player tags thin near extract cam paths. Corpse ESP helps recover your kit after messy fights without blind sprinting.',
         ],
       },
     ],
   },
   {
     slug: 'loader-errors',
-    title: 'Fix DayZ Cheats Loader Errors',
+    title: 'Fix Arena Breakout Infinite Cheat Loader Errors',
     excerpt:
-      'Troubleshoot DayZ cheats loader errors — menu not opening, instant close, antivirus quarantine and failed inject.',
-    metaTitle: 'Fix DayZ Cheats Loader Errors | Inject & Menu',
+      'Troubleshoot ABI loader errors — menu not opening, instant close, antivirus quarantine, and failed inject.',
+    metaTitle: 'Fix ABI Cheat Loader Errors | Menu & Inject',
     metaDescription:
-      'Fix DayZ cheats loader errors on Windows: antivirus quarantine, overlays, failed inject and menu not opening. Confirm BattlEye status is clear first, then escalate with your order ID.',
-    searchTerms: 'dayz cheats loader error inject failed menu not opening fix',
+      'Fix Arena Breakout Infinite cheat loader errors on Windows: antivirus, overlays, failed inject, menu not opening. Confirm Active status first, then support.',
+    searchTerms: 'arena breakout infinite cheat loader error setup fix',
     date: '2026-09-17',
     readMinutes: 8,
     tag: 'Support',
     howTo: true,
     sections: [
       {
-        heading: 'Stop and check status',
+        heading: 'Check status first',
         body: [
-          'First question: is the product clear to load against BattlEye? Updating builds fail for reasons no setting can fix.',
+          'Updating builds fail for reasons settings cannot fix. Confirm Active before deep troubleshooting.',
         ],
       },
       {
         heading: 'Common fixes',
         body: [
-          'Restore quarantined files, confirm folder exclusion, close overlays, reboot once, then try one clean load with DayZ running from the official launcher.',
-          'Do not run random “fix DLL” downloads elsewhere — support only covers official delivery from dayzcheats.io.',
-        ],
-      },
-      {
-        heading: 'Escalate with order ID',
-        body: [
-          'Contact Support with your order ID, Windows version, server type, and a short error description. Screenshots of BattlEye status and the loader window help.',
+          'Restore quarantined files, confirm folder exclusion, close overlays, reboot once, one clean load with the game already open.',
         ],
       },
     ],

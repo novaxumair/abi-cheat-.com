@@ -3,7 +3,7 @@ import { join, relative } from 'node:path'
 
 const root = join(import.meta.dirname, '..')
 const dist = join(root, 'dist')
-const site = 'https://dayzcheats.io'
+const site = 'https://abicheat.com'
 const failures = []
 
 function fail(message) {
@@ -73,18 +73,32 @@ for (const file of files) {
 }
 
 const home = readFileSync(join(dist, 'index.html'), 'utf8')
-const product = readFileSync(join(dist, 'dayz-cheats', 'index.html'), 'utf8')
+const product = readFileSync(join(dist, 'abi-cheats', 'index.html'), 'utf8')
 const reviews = readFileSync(join(dist, 'reviews', 'index.html'), 'utf8')
 const faq = readFileSync(join(dist, 'faq', 'index.html'), 'utf8')
 const support = readFileSync(join(dist, 'support', 'index.html'), 'utf8')
 const forums = readFileSync(join(dist, 'forums', 'index.html'), 'utf8')
 
 if (
-  !home.includes('<title>DayZ Cheats | DayZ Cheat Aimbot, ESP &amp; Hacks</title>')
+  !home.includes(
+    '<title>Arena Breakout Infinite Cheats | Features, Tools &amp; Updates</title>',
+  )
 ) {
-  fail('Homepage does not own the exact transactional title')
+  fail('Homepage does not own the exact title')
 }
-if (product.includes('<title>Buy DayZ Cheats')) fail('Product details page competes with homepage')
+const siteTs = readFileSync(join(root, 'src', 'data', 'site.ts'), 'utf8')
+const purposeMatch = siteTs.match(/export const SITE_PURPOSE =\s*\n\s*'([^']+)'/)
+const sitePurpose = purposeMatch?.[1] ?? ''
+if (!sitePurpose.includes('does not sell cheats for other games')) {
+  fail('SITE_PURPOSE must state single-game ABI focus')
+}
+if ((siteTs.match(/SITE_ABOUT = \[[\s\S]*?\] as const/)?.[0].match(/'/g) || []).length !== 12) {
+  fail('SITE_ABOUT must contain exactly 6 terms')
+}
+if (!home.includes(JSON.stringify(sitePurpose).slice(1, -1))) {
+  fail('Homepage JSON-LD must include stable SITE_PURPOSE on Organization/WebSite')
+}
+if (product.includes('<title>Buy ')) fail('Product details page competes with homepage buy title')
 if ((faq.match(/"@type":"FAQPage"/g) || []).length !== 1) fail('/faq must own one FAQPage')
 for (const [name, html] of [
   ['home', home],
@@ -99,15 +113,18 @@ for (const [name, html] of [
   ['product', product],
   ['reviews', reviews],
 ]) {
-  if (!html.includes('"@id":"https://dayzcheats.io/#product"')) {
+  if (!html.includes('"@id":"https://abicheat.com/#product"')) {
     fail(`${name}: missing shared Product ID`)
   }
 }
-if ((reviews.match(/"@type":"Review"/g) || []).length !== 12) {
-  fail('Reviews schema must contain exactly 12 visible buyer reviews')
+if ((reviews.match(/"@type":"Review"/g) || []).length !== 8) {
+  fail('Reviews schema must contain exactly 8 visible buyer reviews')
 }
-if (!reviews.includes('"reviewCount":12') || !reviews.includes('"ratingValue":"4.6"')) {
-  fail('Reviews AggregateRating must report 12 reviews averaging 4.6')
+if (
+  !reviews.includes('"reviewCount":"8"') ||
+  !reviews.includes('"ratingValue":"4.6"')
+) {
+  fail('Reviews AggregateRating must report 8 reviews averaging 4.6')
 }
 if (support.includes('noindex')) fail('Support page must be indexable')
 if (!forums.includes('"@type":"BreadcrumbList"')) {
@@ -137,8 +154,8 @@ for (const file of files) {
   const twImage = html.match(/<meta name="twitter:image" content="([^"]+)"/)?.[1]
   const robotsMeta = html.match(/<meta name="robots" content="([^"]+)"/)?.[1]
 
-  if (!ogImage?.startsWith('https://dayzcheats.io/og/') || !ogImage.endsWith('.jpg')) {
-    fail(`${page}: og:image must be https://dayzcheats.io/og/*.jpg for SERP thumbnails`)
+  if (!ogImage?.startsWith('https://abicheat.com/og/') || !ogImage.endsWith('.jpg')) {
+    fail(`${page}: og:image must be https://abicheat.com/og/*.jpg for SERP thumbnails`)
   }
   if (!twImage || twImage !== ogImage) {
     fail(`${page}: twitter:image must match og:image`)
@@ -163,8 +180,8 @@ for (const [name, html] of [
   ['product', product],
   ['forums', forums],
 ]) {
-  if (!html.includes('/media/dayz-')) {
-    fail(`${name}: missing visible DayZ media in page body`)
+  if (!html.includes('/media/abi-') && !html.includes('/videos/hero.webm')) {
+    fail(`${name}: missing visible ABI media in page body`)
   }
 }
 for (const [name, html, og] of [
@@ -176,8 +193,8 @@ for (const [name, html, og] of [
     fail(`${name}: missing Open Graph image ${og}`)
   }
 }
-if (!product.includes('/videos/dayz-preview.mp4') || !product.includes('/media/dayz-video-thumb.jpg')) {
-  fail('Product page is missing the self-hosted DayZ preview video')
+if (!product.includes('preview-marquee-track') || !product.includes('/media/abi-screenshot-1.webp')) {
+  fail('Product page is missing the gameplay preview image carousel')
 }
 if (home.includes('iframe.mediadelivery.net') || product.includes('iframe.mediadelivery.net')) {
   fail('Pages still embed blocked mediadelivery video (403 off-domain)')
@@ -193,11 +210,11 @@ if (
 const sitemap = readFileSync(join(dist, 'sitemap.xml'), 'utf8')
 if (sitemap.includes('<sitemapindex')) fail('sitemap.xml must be a single urlset, not an index')
 if (/forums\/(instructions|how-to-load)/.test(sitemap)) fail('Retired forum remains in sitemap.xml')
-if (!sitemap.includes('https://dayzcheats.io/')) {
-  fail('sitemap.xml must use https://dayzcheats.io URLs')
+if (!sitemap.includes('https://abicheat.com/')) {
+  fail('sitemap.xml must use https://abicheat.com URLs')
 }
-if (!sitemap.includes('/videos/dayz-preview.mp4')) {
-  fail('sitemap.xml missing DayZ preview video entry')
+if (!sitemap.includes('/videos/hero.webm')) {
+  fail('sitemap.xml missing ABI preview video entry')
 }
 if (!sitemap.includes('xmlns:video=')) {
   fail('sitemap.xml missing video namespace for Google video indexing')
@@ -216,16 +233,16 @@ const uniqueSitemapUrls = new Set(pageLocs)
 const imageLocs = [...sitemap.matchAll(/<image:loc>([^<]+)<\/image:loc>/g)].map((match) => match[1])
 const requiredImages = [
   '/og/home.jpg',
-  '/og/dayz-cheats.jpg',
+  '/og/abi-cheats.jpg',
   '/og/forums.jpg',
   '/og/reviews.jpg',
   '/og/faq.jpg',
   '/og/support.jpg',
-  '/media/dayz-hero-full.webp',
-  '/media/dayz-cover.webp',
-  '/media/dayz-esp-gameplay.gif',
-  '/media/dayz-menu.gif',
-  '/media/dayz-video-thumb.jpg',
+  '/media/abi-hero-full.webp',
+  '/media/abi-cover.webp',
+  '/media/abi-screenshot-5.webp',
+  '/media/abi-menu.webp',
+  '/media/abi-video-thumb.jpg',
 ]
 
 for (const url of expectedUrls) {
@@ -276,7 +293,7 @@ if (!existsSync(join(dist, 'robots.txt'))) fail('dist/robots.txt is missing')
 if (!existsSync(join(dist, '_routes.json'))) fail('dist/_routes.json is missing')
 
 const robots = readFileSync(join(dist, 'robots.txt'), 'utf8')
-if (!robots.includes('Sitemap: https://dayzcheats.io/sitemap.xml')) {
+if (!robots.includes('Sitemap: https://abicheat.com/sitemap.xml')) {
   fail('robots.txt must point at the canonical HTTPS sitemap')
 }
 if (!robots.includes('Allow: /sitemap.xml')) {
@@ -296,18 +313,17 @@ if (!routes.exclude?.includes('/sitemap.xml') || !routes.exclude?.includes('/rob
 
 for (const asset of [
   'public/og/home.jpg',
-  'public/og/dayz-cheats.jpg',
+  'public/og/abi-cheats.jpg',
   'public/og/forums.jpg',
   'public/og/reviews.jpg',
   'public/og/faq.jpg',
   'public/og/support.jpg',
-  'public/media/dayz-hero-full.webp',
-  'public/media/dayz-cover.webp',
-  'public/media/dayz-box.jpg',
-  'public/media/dayz-esp-gameplay.gif',
-  'public/media/dayz-menu.gif',
-  'public/media/dayz-video-thumb.jpg',
-  'public/videos/dayz-preview.mp4',
+  'public/media/abi-hero-full.webp',
+  'public/media/abi-cover.webp',
+  'public/media/abi-menu.webp',
+  'public/media/abi-video-thumb.jpg',
+  'public/media/abi-screenshot-1.webp',
+  'public/videos/hero.webm',
   'public/sitemap.css',
   'public/_routes.json',
   'functions/_middleware.js',
@@ -322,11 +338,11 @@ if (!redirects.includes('/sitemap-pages.xml')) {
 if (!redirects.includes('/sitemap-index.xml')) {
   fail('_redirects missing sitemap-index.xml -> /sitemap.xml redirect')
 }
-if (!redirects.includes('/tarkov-cheats')) {
-  fail('_redirects must map the legacy /tarkov-cheats route to /dayz-cheats')
+if (!redirects.includes('/arena-breakout-infinite-cheats')) {
+  fail('_redirects must map ABI keyword alias to /abi-cheats')
 }
-if (!redirects.includes('/dayz-hacks')) {
-  fail('_redirects must map the /dayz-hacks keyword alias to /dayz-cheats')
+if (!redirects.includes('/dayz-cheats')) {
+  fail('_redirects must map legacy /dayz-cheats to /abi-cheats')
 }
 
 const worker = readFileSync(join(root, 'workers', 'site.js'), 'utf8')
@@ -372,4 +388,4 @@ if (failures.length) {
   throw new Error(`SEO verification failed:\n- ${failures.join('\n- ')}`)
 }
 
-console.log(`SEO verification passed: ${files.length} HTML files, 13 forums, 12 reviews`)
+console.log(`SEO verification passed: ${files.length} HTML files, 14 forums, 8 reviews`)

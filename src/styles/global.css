@@ -7,7 +7,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Zadeyo-toned marketplace palette — deep violet dark + electric accent */
+/* Marketplace palette — deep violet dark + electric accent */
 :root {
   --bg: #08060f;
   --bg-elevated: #0c0a1a;
@@ -116,7 +116,7 @@ body {
   background: #08060f;
 }
 
-/* Hide third-party watermarks on embedded DayZ preview videos */
+/* Hide edge artifacts on embedded preview videos */
 .video-brand-mask {
   position: relative;
   overflow: hidden;
@@ -186,6 +186,121 @@ body {
   /* Keep footage readable; light violet grade only */
   filter: saturate(0.85) contrast(1.06) brightness(0.88);
 }
+
+/* Product page — infinite gameplay preview marquee */
+.preview-marquee-root {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+  border-top: 1px solid rgba(167, 139, 250, 0.18);
+  border-bottom: 1px solid rgba(167, 139, 250, 0.18);
+  background: rgba(12, 10, 22, 0.85);
+  padding: 0.75rem 0;
+}
+
+.preview-marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 1rem;
+  padding: 0 0.5rem;
+  transform: translateX(-50%);
+  will-change: transform;
+}
+
+.preview-marquee-item {
+  flex: 0 0 auto;
+  width: min(72vw, 22rem);
+  cursor: zoom-in;
+  border-radius: 0.65rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #0a0812;
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.preview-marquee-item:hover {
+  transform: scale(1.03);
+  border-color: rgba(167, 139, 250, 0.35);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+.preview-marquee-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+}
+
+.preview-marquee-fade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3rem;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.preview-marquee-fade--left {
+  left: 0;
+  background: linear-gradient(90deg, rgba(8, 6, 15, 0.95), transparent);
+}
+
+.preview-marquee-fade--right {
+  right: 0;
+  background: linear-gradient(270deg, rgba(8, 6, 15, 0.95), transparent);
+}
+
+.preview-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: rgba(4, 2, 10, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  cursor: zoom-out;
+}
+
+.preview-lightbox-img {
+  max-width: min(96vw, 72rem);
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(167, 139, 250, 0.25);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.65);
+  cursor: default;
+}
+
+.preview-lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 101;
+  display: flex;
+  height: 2.75rem;
+  width: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(20, 16, 31, 0.9);
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.preview-lightbox-close:hover {
+  background: rgba(36, 28, 58, 0.95);
+}
+
 
 .hero-video-tint {
   background:

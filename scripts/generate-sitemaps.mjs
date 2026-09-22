@@ -10,21 +10,21 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const publicDir = join(root, 'public')
 const dataDir = join(root, 'src', 'data')
 const pagesDir = join(root, 'src', 'pages')
-const SITE = (process.env.SITE_URL || 'https://dayzcheats.io').replace(/\/$/, '')
+const SITE = (process.env.SITE_URL || 'https://abicheat.com').replace(/\/$/, '')
 const TODAY = new Date().toLocaleDateString('en-CA')
 const HREFLANG = ['en', 'x-default']
 
-const HERO_FULL = '/media/dayz-hero-full.webp'
-const COVER = '/media/dayz-cover.webp'
-const BOX = '/media/dayz-box.jpg'
-const ESP = '/media/dayz-esp-gameplay.gif'
-const MENU = '/media/dayz-menu.gif'
-const CONTROL = '/media/dayz-control-art.jpg'
-const HOME_ART = '/media/dayz-home-art.jpg'
-const TACTICAL_ART = '/media/dayz-tactical-art.jpg'
-const VIDEO_THUMB = '/media/dayz-video-thumb.jpg'
-const PREVIEW_VIDEO = '/videos/dayz-preview.mp4'
-const OG_DEFAULT = '/og/dayz-cheats.jpg'
+const HERO_FULL = '/media/abi-hero-full.webp'
+const COVER = '/media/abi-cover.webp'
+const BOX = '/media/abi-screenshot-8.webp'
+const ESP = '/media/abi-screenshot-5.webp'
+const MENU = '/media/abi-menu.webp'
+const CONTROL = '/media/abi-control-art.jpg'
+const HOME_ART = '/media/abi-home-art.jpg'
+const TACTICAL_ART = '/media/abi-tactical-art.jpg'
+const VIDEO_THUMB = '/media/abi-video-thumb.jpg'
+const PREVIEW_VIDEO = '/videos/hero.webm'
+const OG_DEFAULT = '/og/abi-cheats.jpg'
 
 const ALL_SITE_IMAGES = [
   HERO_FULL,
@@ -37,7 +37,7 @@ const ALL_SITE_IMAGES = [
   TACTICAL_ART,
   VIDEO_THUMB,
   '/og/home.jpg',
-  '/og/dayz-cheats.jpg',
+  '/og/abi-cheats.jpg',
   '/og/forums.jpg',
   '/og/reviews.jpg',
   '/og/faq.jpg',
@@ -52,20 +52,21 @@ const FORUM_IMAGES = {
   hotkeys: MENU,
   'complete-setup': HERO_FULL,
   'disable-antivirus': CONTROL,
-  'undetected-status': COVER,
+  'load-status-checklist': COVER,
   'aimbot-settings': MENU,
   'esp-wallhack-guide': ESP,
-  'radar-hack-guide': MENU,
+  'loot-container-esp': MENU,
   'stream-proof-setup': HOME_ART,
-  'battleye-status': COVER,
+  'game-patch-status': COVER,
   'windows-setup': HERO_FULL,
-  'raid-play-guide': BOX,
+  'extraction-loot-guide': BOX,
+  'combat-assist-settings': ESP,
   'loader-errors': TACTICAL_ART,
 }
 
 const PAGE_META = {
   '/': { priority: '1.0', changefreq: 'daily' },
-  '/dayz-cheats': { priority: '0.9', changefreq: 'weekly' },
+  '/abi-cheats': { priority: '0.9', changefreq: 'weekly' },
   '/forums': { priority: '0.85', changefreq: 'weekly' },
   '/reviews': { priority: '0.8', changefreq: 'weekly' },
   '/faq': { priority: '0.75', changefreq: 'monthly' },
@@ -173,28 +174,28 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/home.jpg',
-        title: 'DayZ Cheats Open Graph',
-        caption: 'Google and social preview image for dayzcheats.io homepage.',
+        title: 'ABI Cheats Open Graph',
+        caption: 'Google and social preview image for abicheat.com homepage.',
       },
       {
         src: HERO_FULL,
-        title: 'DayZ Cheats Hero',
-        caption: 'Buy DayZ cheats - DayZ Aimbot, ESP and radar hack hero artwork for PC.',
+        title: 'ABI Cheats Hero',
+        caption: 'Buy ABI cheats - ABI Aimbot, ESP and radar hack hero artwork for PC.',
       },
       {
         src: COVER,
-        title: 'DayZ Cheats Product Cover',
-        caption: 'DayZ cheats product cover for checkout and social previews.',
+        title: 'ABI Cheats Product Cover',
+        caption: 'ABI cheats product cover for checkout and social previews.',
       },
       {
         src: VIDEO_THUMB,
-        title: 'DayZ Cheats Preview Thumbnail',
-        caption: 'Thumbnail for the DayZ Aimbot and ESP preview video.',
+        title: 'ABI Cheats Preview Thumbnail',
+        caption: 'Thumbnail for the ABI Aimbot and ESP preview video.',
       },
       {
         src: OG_DEFAULT,
-        title: 'DayZ Cheats Product Social Preview',
-        caption: 'Default Open Graph image for dayzcheats.io product pages.',
+        title: 'ABI Cheats Product Social Preview',
+        caption: 'Default Open Graph image for abicheat.com product pages.',
       },
     ]
   }
@@ -203,13 +204,13 @@ function imagesForPath(path, games, forums) {
   if (game) {
     return [
       {
-        src: '/og/dayz-cheats.jpg',
-        title: 'DayZ Cheats Open Graph',
-        caption: 'Google and social preview for the DayZ cheats product page.',
+        src: '/og/abi-cheats.jpg',
+        title: 'ABI Cheats Open Graph',
+        caption: 'Google and social preview for the ABI cheats product page.',
       },
       {
         src: COVER,
-        title: 'DayZ Aimbot ESP Product Artwork',
+        title: 'ABI Aimbot ESP Product Artwork',
         caption: 'Product features, compatibility, status and price before checkout.',
       },
       {
@@ -229,8 +230,8 @@ function imagesForPath(path, games, forums) {
       },
       {
         src: VIDEO_THUMB,
-        title: 'DayZ Cheats Preview Thumbnail',
-        caption: 'Thumbnail for the DayZ cheats preview video.',
+        title: 'ABI Cheats Preview Thumbnail',
+        caption: 'Thumbnail for the ABI cheats preview video.',
       },
     ]
   }
@@ -239,13 +240,13 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/forums.jpg',
-        title: 'DayZ Cheats Forums Open Graph',
-        caption: 'Google preview image for the DayZ Cheats guides index.',
+        title: 'ABI Cheats Forums Open Graph',
+        caption: 'Google preview image for the ABI Cheats guides index.',
       },
       {
         src: MENU,
-        title: 'DayZ Cheats Forum Artwork',
-        caption: 'Artwork reference for DayZ setup and feature guides.',
+        title: 'ABI Cheats Forum Artwork',
+        caption: 'Artwork reference for ABI setup and feature guides.',
       },
     ]
   }
@@ -259,14 +260,14 @@ function imagesForPath(path, games, forums) {
         title: `${forum?.title || slug} Open Graph`,
         caption:
           forum?.metaDescription ||
-          `Google preview image for ${forum?.title || slug} on dayzcheats.io.`,
+          `Google preview image for ${forum?.title || slug} on abicheat.com.`,
       },
       {
         src: FORUM_IMAGES[slug] || MENU,
         title: `${forum?.title || slug} Artwork`,
         caption:
           forum?.excerpt ||
-          `Visible DayZ Cheats guide artwork for ${forum?.title || slug}.`,
+          `Visible ABI Cheats guide artwork for ${forum?.title || slug}.`,
       },
     ]
   }
@@ -275,8 +276,8 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/reviews.jpg',
-        title: 'DayZ Cheats Reviews Open Graph',
-        caption: 'Google preview image for DayZ cheats reviews.',
+        title: 'ABI Cheats Reviews Open Graph',
+        caption: 'Google preview image for ABI cheats reviews.',
       },
     ]
   }
@@ -284,8 +285,8 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/faq.jpg',
-        title: 'DayZ Cheats FAQ Open Graph',
-        caption: 'Google preview image for the DayZ Cheats FAQ.',
+        title: 'ABI Cheats FAQ Open Graph',
+        caption: 'Google preview image for the ABI Cheats FAQ.',
       },
     ]
   }
@@ -293,8 +294,8 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/support.jpg',
-        title: 'DayZ Cheats Support Open Graph',
-        caption: 'Google preview image for DayZ Cheats support.',
+        title: 'ABI Cheats Support Open Graph',
+        caption: 'Google preview image for ABI Cheats support.',
       },
     ]
   }
@@ -302,8 +303,8 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/privacy.jpg',
-        title: 'DayZ Cheats Privacy Policy',
-        caption: 'Privacy policy preview for dayzcheats.io orders and support.',
+        title: 'ABI Cheats Privacy Policy',
+        caption: 'Privacy policy preview for abicheat.com orders and support.',
       },
     ]
   }
@@ -311,8 +312,8 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/terms.jpg',
-        title: 'DayZ Cheats Terms of Use',
-        caption: 'License terms preview for DayZ Cheats.',
+        title: 'ABI Cheats Terms of Use',
+        caption: 'License terms preview for ABI Cheats.',
       },
     ]
   }
@@ -320,23 +321,23 @@ function imagesForPath(path, games, forums) {
     return [
       {
         src: '/og/refunds.jpg',
-        title: 'DayZ Cheats Refund Policy',
-        caption: 'Refund rules preview for digital DayZ Cheats licenses.',
+        title: 'ABI Cheats Refund Policy',
+        caption: 'Refund rules preview for digital ABI Cheats licenses.',
       },
     ]
   }
 
-  return [{ src: OG_DEFAULT, title: 'DayZ Cheats', caption: 'DayZ Cheats page artwork.' }]
+  return [{ src: OG_DEFAULT, title: 'ABI Cheats', caption: 'ABI Cheats page artwork.' }]
 }
 
 function videosForPath(path) {
-  if (path === '/dayz-cheats') {
+  if (path === '/abi-cheats') {
     return [
       {
         thumb: VIDEO_THUMB,
-        title: 'DayZ Cheats Aimbot and ESP Preview',
+        title: 'ABI Cheats Aimbot and ESP Preview',
         description:
-          'Self-hosted DayZ cheats preview showing Aimbot, ESP menu and survival gameplay visuals on PC.',
+          'Self-hosted ABI cheats preview showing Aimbot, ESP menu and survival gameplay visuals on PC.',
         content: PREVIEW_VIDEO,
       },
     ]
@@ -445,16 +446,16 @@ function validate(games, forums, allPaths, sitemap) {
     if (!imageLocs.includes(siteUrl(image))) errors.push(`Sitemap missing required image: ${image}`)
   }
   if (!sitemap.includes(siteUrl(PREVIEW_VIDEO))) {
-    errors.push('Sitemap missing DayZ preview video content_loc')
+    errors.push('Sitemap missing ABI preview video content_loc')
   }
   if (/Tarkov|tarkovcheats|EFT Reaper|Warzone|warzonecheats|Ricochet/i.test(sitemap)) {
     errors.push('Sitemap still contains legacy Tarkov/Warzone labels')
   }
-  if (!sitemap.includes('dayzcheats.io')) {
-    errors.push('Sitemap must target dayzcheats.io')
+  if (!sitemap.includes('abicheat.com')) {
+    errors.push('Sitemap must target abicheat.com')
   }
   if (/tarkovcheats|warzonecheats|wardogshacks|theisle/i.test(sitemap)) {
-    errors.push('Sitemap contains a non-DayZ domain')
+    errors.push('Sitemap contains a non-ABI domain')
   }
   if (imageLocs.length < expectedUrls.size) {
     errors.push('Image count is lower than page count - every URL needs an image')

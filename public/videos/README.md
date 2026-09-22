@@ -1,7 +1,4 @@
 ﻿# Videos
 
-Self-hosted DayZ / DayZ Cheats media:
-- `/videos/dayz-preview.mp4` — battlelog DayZ Reaper preview (no third-party embeds)
-- `/media/dayz-hero-full.webp`, `dayz-cover.webp`, `dayz-box.jpg` — product art
-- `/media/dayz-menu.gif`, `dayz-esp-gameplay.gif` — menu/ESP stills
-- `/media/dayz-video-thumb.jpg` — preview poster frame
+- `/videos/hero.webm` — Arena Breakout Infinite cheat hero loop (muted, cover fit)
+- Product and forum pages may reference this preview alongside `/media/abi-video-thumb.jpg`

@@ -1,31 +1,27 @@
-﻿import { DAYZ_OG } from './images'
+﻿import { ABI_OG } from './images'
 import { PAGE_OG } from './og'
 
-export const SITE_URL = 'https://dayzcheats.io'
-export const SITE_NAME = 'DayZ Cheats'
-export const SITE_HOST = 'dayzcheats.io'
+export const SITE_URL = 'https://abicheat.com'
+export const SITE_NAME = 'ABI Cheats'
+export const SITE_HOST = 'abicheat.com'
 
-/**
- * Sole purpose — used in schema + about copy.
- * Single-product site: DayZ / DayZ Standalone cheats for PC (worldwide).
- * Canonical host is apex https://dayzcheats.io (www 301s to apex in the Worker).
- */
+/** Stable site identity — Organization, WebSite, and about copy (not per-route). */
 export const SITE_PURPOSE =
-  'Buy DayZ cheats for DayZ Standalone on Windows PC — silent-aim Aimbot, player and loot ESP, wallhack, radar hack and live BattlEye status with instant digital delivery.'
+  'Arena Breakout Infinite Cheats is a single-game site focused on Arena Breakout Infinite cheats, tools, and related gameplay features. The site is dedicated to Arena Breakout Infinite only and does not sell cheats for other games.'
 
+/** Site-wide subject terms for schema knowsAbout (max 6). */
 export const SITE_ABOUT = [
-  'dayz cheats',
-  'dayz cheat',
-  'dayz hacks',
-  'dayz hack',
-  'dayz standalone cheats',
-  'dayz aimbot',
-  'dayz esp',
-  'dayz wallhack',
-  'dayz radar hack',
-  'battleye dayz cheats',
-  'dayz cheat aimbot',
+  'Arena Breakout Infinite Cheats',
+  'Arena Breakout Infinite',
+  'Arena Breakout Infinite cheat features',
+  'Arena Breakout Infinite ESP',
+  'Arena Breakout Infinite gameplay tools',
+  'Arena Breakout Infinite cheat setup',
 ] as const
+
+/** Product JSON-LD description (features + delivery — distinct from SITE_PURPOSE). */
+export const PRODUCT_SCHEMA_DESCRIPTION =
+  'Windows PC cheat menu for Arena Breakout Infinite with aimbot, player and AI ESP, loot and container overlays, configs, and digital license delivery.'
 
 /** Offer price shown on product schema + purchase UI. */
 export const PRODUCT_PRICE_USD = '35'
@@ -35,14 +31,13 @@ export const SEO_REGIONS = [
   { hreflang: 'x-default', label: 'Default' },
 ] as const
 
-export const OG_IMAGE = DAYZ_OG
+export const OG_IMAGE = ABI_OG
 
 export type PageSeo = {
   title: string
   description: string
   path: string
   ogType?: 'website' | 'article' | 'product'
-  /** Prefer /og/*.jpg (1200x630) for Google SERP thumbnails */
   image?: string
   imageAlt?: string
   robots?: string
@@ -53,74 +48,75 @@ const INDEX_ROBOTS =
 
 export const SEO = {
   home: {
-    title: 'DayZ Cheats | DayZ Cheat Aimbot, ESP & Hacks',
+    title: 'Arena Breakout Infinite Cheats | Features, Tools & Updates',
     description:
-      'Buy DayZ cheats for DayZ Standalone — silent aim Aimbot, player and loot ESP, wallhack and radar hack from $35. Check live BattlEye status, then checkout.',
+      'Single-game site for Arena Breakout Infinite cheats on PC — feature overview, loader status, setup guides, player reviews, and forums. Plans from $35.',
     path: '/',
     ogType: 'website',
     image: PAGE_OG.home,
-    imageAlt: 'DayZ Cheats — DayZ Aimbot, ESP and radar hack for PC',
+    imageAlt: 'Arena Breakout Infinite gameplay showing in-game overlay on PC',
     robots: INDEX_ROBOTS,
   },
   forums: {
-    title: 'DayZ Cheats Guides | Aimbot, ESP, Radar & Status',
+    title: 'Arena Breakout Infinite Cheats Forum | Community Discussions',
     description:
-      'DayZ cheats guides hub — silent aim, player and loot ESP, radar hack, antivirus exclusions, loader setup and BattlEye status articles before you buy.',
+      'Community discussions and setup guides for Arena Breakout Infinite cheats — aimbot tuning, ESP defaults, loot overlays, loader help, and patch-day checklists.',
     path: '/forums',
     ogType: 'website',
     image: PAGE_OG.forums,
-    imageAlt: 'DayZ Cheats setup guides for Aimbot, ESP and BattlEye',
+    imageAlt: 'Arena Breakout Infinite gameplay screenshot from forum guides',
     robots: INDEX_ROBOTS,
   },
   reviews: {
-    title: 'DayZ Cheats Reviews | Buyer Feedback on DayZ Hacks',
+    title: 'Arena Breakout Infinite Cheats Reviews | Player Feedback',
     description:
-      'Read DayZ cheats reviews covering silent aim, player ESP, loot ESP and BattlEye rebuilds before you buy a DayZ Standalone license for PC.',
+      'Player feedback on Arena Breakout Infinite cheats — ESP accuracy, aimbot smoothing, loot filters, and loader updates after ABI patches.',
     path: '/reviews',
     ogType: 'website',
     image: PAGE_OG.reviews,
-    imageAlt: 'DayZ Cheats buyer reviews for DayZ Standalone',
+    imageAlt: 'Arena Breakout Infinite gameplay screenshot referenced in reviews',
     robots: INDEX_ROBOTS,
   },
   faq: {
-    title: 'DayZ Cheats FAQ | Price, BattlEye Status & Setup',
+    title: 'Arena Breakout Infinite Cheats FAQ | Common Questions',
     description:
-      'FAQ for buying DayZ cheats on Windows PC — price, Aimbot and ESP features, BattlEye status, private server support, loader setup and delivery.',
+      'Answers about Arena Breakout Infinite cheats — Windows requirements, features, pricing from $35, digital delivery, loader status, and setup steps.',
     path: '/faq',
     ogType: 'website',
     image: PAGE_OG.faq,
-    imageAlt: 'DayZ Cheats FAQ — price, BattlEye and setup',
+    imageAlt: 'Arena Breakout Infinite loot overlay screenshot from FAQ',
     robots: INDEX_ROBOTS,
   },
   support: {
-    title: 'DayZ Cheats Support | Loader, Delivery & Setup Help',
+    title: 'Arena Breakout Infinite Cheats Support | Loader & Delivery',
     description:
-      'Get help buying and loading DayZ cheats — delivery email, Windows setup, antivirus exclusions, loader errors and BattlEye status updates.',
+      'Help with Arena Breakout Infinite cheat orders, license delivery, Windows loader steps, antivirus exclusions, and common menu errors.',
     path: '/support',
     ogType: 'website',
     image: PAGE_OG.support,
-    imageAlt: 'DayZ Cheats support for loader and delivery help',
+    imageAlt: 'Arena Breakout Infinite cheat support and loader help',
     robots: INDEX_ROBOTS,
   },
   product: {
-    title: 'DayZ Cheats Price & Checkout | Aimbot, ESP, Radar',
+    title: 'Arena Breakout Infinite Cheats | Features & Setup',
     description:
-      'DayZ cheats price and checkout — silent aim Aimbot, player ESP, loot ESP, wallhack, radar hack, spoofer and live BattlEye status from $35.',
-    path: '/dayz-cheats',
+      'Full Arena Breakout Infinite cheat feature list for PC — aimbot, player ESP, loot overlays, configs, system requirements, and checkout from $35.',
+    path: '/abi-cheats',
     ogType: 'product',
     image: PAGE_OG.product,
-    imageAlt: 'DayZ Aimbot, ESP and radar hack product details',
+    imageAlt: 'Arena Breakout Infinite product page showing ESP and aimbot gameplay',
     robots: INDEX_ROBOTS,
   },
 } as const satisfies Record<string, PageSeo>
 
 export const HOME_HEADINGS = {
-  h1: 'DayZ Cheats — DayZ Cheat Aimbot, ESP & Hacks',
-  h2Features: 'DayZ Aimbot, ESP, loot ESP & radar hack',
-  h2Featured: 'DayZ ESP and silent aim Aimbot',
-  h2About: 'Clear BattlEye status before you buy DayZ cheats',
-  h2Access: 'Buy DayZ Cheats',
-  h2Faq: 'DayZ Cheats FAQ',
+  h1: 'Arena Breakout Infinite Cheats',
+  h2Features: 'What You Get With Arena Breakout Infinite Cheats',
+  h2HowItWorks: 'How Arena Breakout Infinite Cheats Works',
+  h2Reviews: 'Arena Breakout Infinite Cheats Reviews',
+  h2Forums: 'Arena Breakout Infinite Cheats Forum',
+  h2Faq: 'Arena Breakout Infinite Cheats FAQ',
+  h2Access: 'Ready when you are',
 } as const
 
 export function absoluteUrl(path: string) {

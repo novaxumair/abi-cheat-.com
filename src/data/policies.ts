@@ -18,12 +18,12 @@ export const POLICY_PAGES: PolicyPageContent[] = [
   {
     slug: 'privacy',
     path: '/privacy',
-    title: 'Privacy Policy | DayZ Cheats PC',
+    title: 'Privacy Policy | Arena Breakout Infinite Cheats',
     description:
-      'How dayzcheats.io handles order details, delivery email, support messages and basic site analytics for DayZ cheats.',
-    h1: 'DayZ Cheats Privacy Policy',
+      'How abicheat.com handles order details, delivery email, support messages and basic site analytics for ABI cheats.',
+    h1: 'Privacy Policy',
     intro:
-      'This page explains what we collect when you browse dayzcheats.io, buy a DayZ Cheats license, or contact support — and what we do not collect.',
+      'This page explains what we collect when you browse abicheat.com, buy an Arena Breakout Infinite cheat license, or contact support — and what we do not collect.',
     sections: [
       {
         heading: 'What we collect',
@@ -45,8 +45,8 @@ export const POLICY_PAGES: PolicyPageContent[] = [
         heading: 'Cookies and third parties',
         body: [
           'Essential cookies may be set by checkout or CDN providers so payment and delivery work.',
-          'Preview media is hosted on dayzcheats.io. Third-party embeds are not used for the main product preview.',
-          'Official DayZ and Bohemia Interactive links are external. Their privacy policies apply once you leave dayzcheats.io.',
+          'Preview media is self-hosted on abicheat.com. Third-party embeds are not used for the main product preview.',
+          'Official Arena Breakout Infinite store links are external. Their privacy policies apply once you leave abicheat.com.',
         ],
       },
       {
@@ -66,26 +66,26 @@ export const POLICY_PAGES: PolicyPageContent[] = [
   {
     slug: 'terms',
     path: '/terms',
-    title: 'Terms of Use | DayZ Cheats PC',
+    title: 'Terms of Use | Arena Breakout Infinite Cheats',
     description:
-      'License rules, age limits, BattlEye risk, and liability limits for DayZ cheats on dayzcheats.io.',
-    h1: 'DayZ Cheats Terms of Use',
+      'License rules, age limits, anti-cheat risk, and liability limits for ABI cheats on abicheat.com.',
+    h1: 'Terms of Use',
     intro:
-      'Buying or running DayZ Cheats means you accept these terms. A license covers personal use of Aimbot, ESP, wallhack, loot ESP and radar tools for DayZ Standalone on Windows PC — nothing beyond that.',
+      'Buying or running Arena Breakout Infinite cheats means you accept these terms. A license covers personal use of Aimbot, ESP, wallhack, and loot tools for ABI on Windows PC — nothing beyond that.',
     sections: [
       {
         heading: 'Acceptance and what a license covers',
         body: [
-          'A key unlocks the current DayZ Cheats build for the duration you purchased (weekly or monthly plans where offered).',
+          'A key unlocks the current ABI cheat build for the duration you purchased (weekly or monthly plans where offered).',
           'Handing the package to someone else, reselling it, sharing accounts, or reverse-engineering the loader breaks these terms and can end your access without a refund.',
         ],
       },
       {
         heading: 'Risk and anti-cheat disclaimer',
         body: [
-          'DayZ uses BattlEye, and private servers add their own admin moderation. Using third-party software can violate the game’s terms and lead to account or server penalties.',
-          'We push rebuilds after BattlEye and game updates when needed, but nothing here guarantees a build stays clear forever or that an account stays safe.',
-          'All risk sits with you. We accept no liability for bans, lost characters, or other damage tied to using the product. Check live status before you load.',
+          'Arena Breakout Infinite uses anti-cheat and publisher moderation. Using third-party software can violate the game’s terms and lead to account penalties.',
+          'We push rebuilds after game updates when needed, but nothing here guarantees a build stays compatible forever or that an account stays safe.',
+          'All risk sits with you. We accept no liability for bans, lost progress, or other damage tied to using the product. Check Active status before you load.',
         ],
       },
       {
@@ -113,18 +113,18 @@ export const POLICY_PAGES: PolicyPageContent[] = [
   {
     slug: 'refunds',
     path: '/refunds',
-    title: 'Refund Policy | DayZ Cheats PC',
+    title: 'Refund Policy | Arena Breakout Infinite Cheats',
     description:
-      'When DayZ Cheats refunds apply for digital DayZ licenses, delivery failures, and Updating status windows on dayzcheats.io.',
-    h1: 'DayZ Cheats Refund Policy',
+      'When ABI cheat refunds apply for digital licenses, delivery failures, and Updating status windows on abicheat.com.',
+    h1: 'Refund Policy',
     intro:
-      'DayZ Cheats licenses are digital goods. This page covers when we can refund, when we cannot, and how to open a request with your order ID.',
+      'Arena Breakout Infinite cheat licenses are digital goods. This page covers when we can refund, when we cannot, and how to open a request with your order ID.',
     sections: [
       {
         heading: 'When refunds are available',
         body: [
           'If payment cleared but no license or delivery email arrived within a reasonable window, contact Support with the order ID and we will replace the key or refund.',
-          'If the product shows Updating for an extended period after purchase and never returns to a clear-to-load status during your license window, you may request a refund or equivalent time credit.',
+          'If the product shows Updating for an extended period after purchase and never returns to Active during your license window, you may request a refund or equivalent time credit.',
           'Duplicate charges or clear processor errors are refunded once verified.',
         ],
       },
@@ -132,9 +132,8 @@ export const POLICY_PAGES: PolicyPageContent[] = [
         heading: 'When refunds are not available',
         body: [
           'Change of mind after a working key has been delivered and activated.',
-          'Bans, admin kicks, or gameplay outcomes — status is never a permanent guarantee.',
+          'Bans or gameplay outcomes — status is never a permanent guarantee.',
           'Issues caused by skipping antivirus exclusions, running conflicting overlays, or loading while status is Updating.',
-          'Heavily modded private servers that block third-party software at the server level.',
           'Shared, resold, or otherwise invalidated keys under the Terms of Use.',
         ],
       },

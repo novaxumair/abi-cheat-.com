@@ -2,8 +2,10 @@ import { Check, Shield } from 'lucide-react'
 import { Navbar } from '../components/Navbar'
 import { SiteFooter } from '../components/SiteFooter'
 import { GameCover } from '../components/GameCover'
+import { GameplayPreviewGallery } from '../components/GameplayPreviewGallery'
 import {
   GUIDE_FEATURES,
+  PRODUCT_FEATURE_GROUPS,
   getGame,
   guidePath,
   parseGuideSlug,
@@ -15,13 +17,12 @@ import { FaqSection } from '../components/FaqSection'
 import { CheckoutLink } from '../components/CheckoutLink'
 import { NotFoundPage } from './NotFoundPage'
 import { blogPath } from '../data/blogs'
-import { DAYZ_HOME_VIDEO } from '../data/media'
-import { DayZPreview } from '../components/DayZPreview'
+import { ABI_HOME_VIDEO } from '../data/media'
 
 function ProductPurchaseCard({ game }: { game: Game }) {
   return (
     <div className="overflow-hidden rounded-2xl border border-z-soft/15 bg-[rgba(20,16,31,0.95)] sm:rounded-3xl">
-      <CheckoutLink className="block" aria-label="Buy DayZ Cheats">
+      <CheckoutLink className="block" aria-label="Buy Arena Breakout Infinite cheats">
         <GameCover
           slug={game.slug}
           name={game.name}
@@ -32,9 +33,9 @@ function ProductPurchaseCard({ game }: { game: Game }) {
       </CheckoutLink>
       <div className="p-5 sm:p-6">
         <div className="flex items-center gap-3">
-          <div className="icon-well shrink-0 text-sm font-bold">DZ</div>
+          <div className="icon-well shrink-0 text-sm font-bold">ABI</div>
           <div className="min-w-0">
-            <p className="truncate text-sm font-semibold text-white">DayZ Cheats</p>
+            <p className="truncate text-sm font-semibold text-white">Arena Breakout Infinite</p>
             <p className="text-xs text-white/45">
               {game.status} · From ${PRODUCT_PRICE_USD}
             </p>
@@ -42,10 +43,10 @@ function ProductPurchaseCard({ game }: { game: Game }) {
         </div>
 
         <CheckoutLink className="cta-gradient mt-5 block w-full rounded-full py-3.5 text-center text-sm font-semibold text-white transition-opacity hover:opacity-90">
-          Buy DayZ Cheats
+          Buy ABI cheats
         </CheckoutLink>
         <p className="mt-3 text-center text-[11px] text-white/40">
-          Instant delivery · Check BattlEye status first
+          Digital delivery · Confirm Active status first
         </p>
       </div>
     </div>
@@ -93,28 +94,52 @@ export function GameProductPage({ guideSlug }: GameProductPageProps) {
               <span className="min-w-0 text-white/70">Product details</span>
             </nav>
 
-            <div className="mt-6 grid gap-8 lg:mt-8 lg:grid-cols-12 lg:items-start lg:gap-10">
+            <div className="mt-6 text-center lg:mt-8">
+              <span className="inline-flex items-center gap-1.5 text-xs text-z-soft">
+                <Shield className="h-3.5 w-3.5 shrink-0" strokeWidth={1.75} />
+                {game.status} · Arena Breakout Infinite · Windows PC · {SITE_HOST}
+              </span>
+
+              <h1 className="mx-auto mt-3 max-w-3xl text-2xl font-semibold leading-tight tracking-tight text-white sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1]">
+                Arena Breakout Infinite Cheats
+              </h1>
+              <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-white/55 sm:mt-4 sm:text-base">
+                Full ABI cheat menu — Aimbot options, player and AI ESP, loot and container
+                wallhack, corpse overlays, and config tools. Confirm Active loader status, then
+                checkout for PC.
+              </p>
+            </div>
+
+            <div className="mt-10 lg:hidden">
+              <ProductPurchaseCard game={game} />
+            </div>
+
+            <div className="mt-12 grid gap-8 lg:mt-14 lg:grid-cols-12 lg:items-start lg:gap-10">
               <div className="lg:col-span-7">
-                <span className="inline-flex items-center gap-1.5 text-xs text-z-soft">
-                  <Shield className="h-3.5 w-3.5 shrink-0" strokeWidth={1.75} />
-                  {game.status} · DayZ Standalone · BattlEye · {SITE_HOST}
-                </span>
-
-                <h1 className="mt-3 text-2xl font-semibold leading-tight tracking-tight text-white sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1]">
-                  DayZ Cheats Price & Checkout
-                </h1>
-                <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/55 sm:mt-4 sm:text-base">
-                  Silent aim Aimbot, ESP, wallhack, loot ESP and radar hack for DayZ Standalone on
-                  PC. Confirm BattlEye status, then checkout — worldwide delivery.
-                </p>
-
-                <div className="mt-6 lg:hidden">
-                  <ProductPurchaseCard game={game} />
+                <div className="space-y-10">
+                  {PRODUCT_FEATURE_GROUPS.map((group) => (
+                    <div key={group.name}>
+                      <h2 className="text-lg font-semibold tracking-tight text-white sm:text-xl">
+                        {group.name}
+                      </h2>
+                      <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+                        {group.items.map((item) => (
+                          <li
+                            key={item}
+                            className="flex items-start gap-2 text-sm text-white/60"
+                          >
+                            <Check className="mt-0.5 h-4 w-4 shrink-0 text-z-soft" strokeWidth={2} />
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
                 </div>
 
                 <div className="mt-10">
                   <h2 className="text-lg font-semibold tracking-tight text-white sm:text-xl">
-                    Included features
+                    Why players use these modules
                   </h2>
                   <ul className="mt-4 space-y-3">
                     {GUIDE_FEATURES.map((f) => (
@@ -134,13 +159,13 @@ export function GameProductPage({ guideSlug }: GameProductPageProps) {
                 <div className="mt-12 space-y-8 text-sm leading-relaxed text-white/55">
                   <div>
                     <h2 className="text-lg font-semibold tracking-tight text-white sm:text-xl">
-                      Servers & BattlEye
+                      Platforms & patches
                     </h2>
                     <p className="mt-3">
-                      Runs on official DayZ servers and most common private mod setups. After a
-                      client or BattlEye patch, status may show Updating until tested —{' '}
-                      {SITE_NAME} publishes live status so you are not buying a dead loader. Status
-                      first, load second.
+                      Runs on Arena Breakout Infinite via Steam, Epic, Microsoft Store, and the
+                      official launcher. After an ABI patch, status may show Updating until tested —{' '}
+                      {SITE_NAME} publishes Active labels so you are not loading a mismatched build.
+                      Status first, raid second.
                     </p>
                   </div>
 
@@ -150,8 +175,8 @@ export function GameProductPage({ guideSlug }: GameProductPageProps) {
                     </h2>
                     <ol className="mt-3 list-decimal space-y-2 pl-5">
                       <li>Confirm current status on {SITE_HOST}.</li>
-                      <li>Only load when status is clear (or accept Updating risk).</li>
-                      <li>Checkout for digital license delivery worldwide.</li>
+                      <li>Load only when status is Active (or accept Updating risk).</li>
+                      <li>Checkout for digital license delivery.</li>
                       <li>
                         Follow the{' '}
                         <a
@@ -165,14 +190,6 @@ export function GameProductPage({ guideSlug }: GameProductPageProps) {
                     </ol>
                   </div>
                 </div>
-
-                <div className="mt-12">
-                  <h2 className="text-lg font-semibold tracking-tight text-white sm:text-xl">
-                    Feature preview
-                  </h2>
-                  <p className="mt-2 text-sm text-white/45">{DAYZ_HOME_VIDEO.caption}</p>
-                  <DayZPreview className="mt-4" />
-                </div>
               </div>
 
               <aside className="hidden lg:col-span-5 lg:block">
@@ -184,14 +201,34 @@ export function GameProductPage({ guideSlug }: GameProductPageProps) {
           </div>
         </section>
 
+        <section
+          className="pb-10 pt-2 sm:pb-12 sm:pt-4"
+          aria-labelledby="gameplay-preview-heading"
+        >
+          <div className="page-x text-center">
+            <h2
+              id="gameplay-preview-heading"
+              className="text-lg font-semibold tracking-tight text-white sm:text-xl"
+            >
+              Gameplay preview
+            </h2>
+            <p className="mx-auto mt-2 max-w-xl text-sm text-white/45">
+              {ABI_HOME_VIDEO.caption} Hover to slow the scroll — click any shot to zoom in.
+            </p>
+          </div>
+          <div className="relative left-1/2 mt-6 w-screen max-w-[100vw] -translate-x-1/2 sm:mt-8">
+            <GameplayPreviewGallery />
+          </div>
+        </section>
+
         <FaqSection
-          heading="DayZ Cheats product FAQ"
-          intro="Status, features, server support, delivery and load questions before checkout."
+          heading="Arena Breakout Infinite cheats FAQ"
+          intro="Status, features, platforms, delivery, and load questions before checkout."
           items={PRODUCT_PAGE_FAQS}
         />
       </main>
 
-      <SiteFooter currentPath="/dayz-cheats" />
+      <SiteFooter currentPath="/abi-cheats" />
     </div>
   )
 }

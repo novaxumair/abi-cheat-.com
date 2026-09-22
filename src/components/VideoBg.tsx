@@ -1,19 +1,31 @@
-import { DAYZ_HERO } from '../data/media'
+import { ABI_HERO, ABI_HOME_VIDEO } from '../data/media'
 
 type VideoBgProps = {
-  /** Full-bleed DayZ hero image (defaults to product artwork). */
+  /** Poster while video loads */
   image?: string
   imageAlt?: string
 }
 
-/** Full-bleed static DayZ hero — no legacy video background. */
+/** Full-bleed hero video — muted loop, cover fit (no letterboxing). */
 export function VideoBg({
-  image = DAYZ_HERO,
-  imageAlt = 'DayZ cheats Aimbot and ESP product artwork',
+  image = ABI_HERO,
+  imageAlt = 'Arena Breakout Infinite ESP and Aimbot gameplay',
 }: VideoBgProps) {
   return (
     <div className="hero-video-wrap absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
       <div className="absolute inset-0 z-0 bg-z-bg" aria-hidden />
+      <video
+        className="hero-video-bg absolute inset-0 z-[1] h-full w-full object-cover object-center"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+        poster={image}
+        aria-label={ABI_HOME_VIDEO.title}
+      >
+        <source src={ABI_HOME_VIDEO.src} type="video/webm" />
+      </video>
       <img
         src={image}
         alt={imageAlt}
@@ -21,7 +33,7 @@ export function VideoBg({
         height={1080}
         decoding="async"
         fetchPriority="high"
-        className="hero-video-bg absolute inset-0 z-[1] h-full w-full object-cover object-[78%_42%] opacity-100 sm:object-[72%_40%]"
+        className="sr-only"
       />
       <div className="hero-video-tint pointer-events-none absolute inset-0 z-[2]" aria-hidden />
       <div className="hero-video-tint-glow pointer-events-none absolute inset-0 z-[2]" aria-hidden />
