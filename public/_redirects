@@ -1,12 +1,5 @@
-# Trailing-slash canonicalization
-/abi-cheats/   /abi-cheats   301
-/forums/        /forums        301
-/reviews/       /reviews       301
-/faq/           /faq           301
-/support/       /support       301
-/privacy/       /privacy       301
-/terms/         /terms         301
-/refunds/       /refunds       301
+# Path aliases (do not strip trailing slashes here — Astro trailingSlash:never + Pages
+# directory URLs already resolve; slash-only rules caused ERR_TOO_MANY_REDIRECTS loops)
 /refund/        /refunds       301
 /refund-policy  /refunds       301
 /refund-policy/ /refunds       301
@@ -83,7 +76,6 @@
 /forums/how-to-load/     /forums/complete-setup#3-load-order       301
 /blog/:slug/    /forums/:slug  301
 /blog/:slug     /forums/:slug  301
-/forums/:slug/  /forums/:slug  301
 
 # Legacy product path from template
 /dayz-cheats    /abi-cheats   301
